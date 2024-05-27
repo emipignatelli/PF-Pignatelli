@@ -1,0 +1,1257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+header {
+    padding: 1%;
+    background-color: beige;
+    font-style: italic;
+    font-size: large;
+    
+}
+
+/*la idea sería, como marca el boceto presentado, que los logos de instagram y de facebook estén a la derecha del encabezado. Lo voy a terminar de aplicar cuando utilice flexbox. Intenté hacerlo sin ello (solo con float) pero no me salió, seguiré repasando y practicando*/
+
+nav {
+    padding: 1%;
+}
+nav a {
+
+
+    text-align: justify;
+    font-size: 130%;
+    text-decoration: none;
+    background-color: yellow;
+    font-family:Arial, Helvetica, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    
+    
+
+    
+
+
+}
+
+
+
+
+body {
+    /* background-image */
+    background-color: beige;
+    padding: 1%;
+
+    
+}
+main .tituloPrincipal {
+    text-align: center;
+    font-size: 200%;
+}
+main .subtitulo {
+    text-align: left;
+    font-size: 150%;
+}
+
+main {
+    font-family:Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Times, serif, 'Arial Narrow', Arial, sans-serif 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 110%;
+    padding: 1%;
+    
+}
+
+main section {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+
+    
+}
+
+
+
+aside  {
+    text-align: right;
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 1%;
+
+}
+
+
+footer {
+    background-color: beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80%;
+    padding: 1%;
+
+
+}
+
+
+
+
+/*stylos 2da pre entrega*/
+
+
+/*body {
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*header
+@media (max-width: 2000px) {
+.flex-container {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    
+    
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-left: 5px;
+    
+    
+    
+}
+
+
+
+
+.logo img {
+    max-height: 100px;
+    
+    
+}
+
+.iconos img {
+
+    width: 30px;
+    margin-left: 10px;
+}
+
+.texto-iconos {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: yellow;
+}
+
+.navegacion {
+    background-color: black;
+    padding-right: 20px;
+    padding-top: 4px;
+
+}
+
+.navegacion ul {
+    list-style-type: none;
+}
+.nagegacion ul li {
+    display: block;
+    gap: 5px;
+
+}
+.navegacion ul li a {
+    font-family: cursive;
+    font-size: medium;
+    color: yellow;
+    text-decoration: none;
+    
+    
+    
+    
+}
+
+.navegacion ul li a:hover {
+    background-color: blue;
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+    .flex-container {
+        position: fixed;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4px;
+        margin-bottom: 4px;
+
+    }
+    .iconos {
+        display: none;
+    }
+    .navegacion {
+        display: none;
+    }
+}
+
+
+/*main
+
+@media (max-width: 2000px) {
+
+
+main {
+    background-color: yellow;
+    height: 70%;
+    margin-top: 110px;
+}
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+
+main { 
+    background-color: yellow;
+    height: 70%;
+    margin-top: 70px;
+}
+
+
+}
+
+
+
+
+
+.tituloPrincipal {
+    text-align: center;
+    margin: 1px;
+    padding-top: 50px;
+    font-family: "PermanentMarker-Regular";
+        src: url("../fonts/PermanentMarker-Regular.ttf");
+    font-weight: bold;
+    
+    
+    
+}
+
+.subtitulo {
+    text-align: start;
+    padding-top: 10px;
+    padding-left: 4px;
+    font-size: large;
+    font-family: " sora "; src: url("../fonts/Sora-VariableFont_wght.ttf");
+    font-weight: bold;
+    
+}
+
+.texto {
+    text-align: center;
+    
+}
+
+
+
+.lista-art {
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    
+
+}
+
+.list-art2 {
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+
+    
+}
+
+
+
+.lista-art li:hover {
+    background-color: white;
+    
+}
+
+.list-art2 li:hover {
+    background-color: white;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 480px) {
+
+    .tituloPrincipal {
+        text-align: center;
+        margin: 1px;
+        font-family: "PermanentMarker-Regular";
+        src: url("../fonts/PermanentMarker-Regular.ttf");
+        font-weight: bold;
+        
+        
+        
+    }
+    
+    .subtitulo {
+        text-align: center;
+        padding-top: 10px;
+        
+        font-size: large;
+        font-family: " sora "; src: url("../fonts/Sora-VariableFont_wght.ttf");
+        font-weight: bold;
+    
+        
+    }
+
+
+}
+
+@media (max-width: 2000px) {
+.flex-section {
+    
+    display: grid;
+    
+
+    grid-template-columns: 40% 40% 20%;
+    grid-template-areas: 
+    
+    "sections sections2 aside-index";
+    column-gap: 3px;
+    padding-left: 5px;
+    padding-right: 15px;
+
+}
+
+
+
+.aside-index {
+    background-color: yellow;
+    grid-area: aside-index;
+}
+
+
+
+.sections {
+    
+    background-color: yellow;
+    grid-area: sections;
+    height: auto;
+    max-width: 100%;
+    background-color: yellow;
+    border: solid black
+}
+
+.sections2 {
+    
+    background-color: yellow;
+    grid-area: sections2;
+    
+    height: auto;
+    max-width: 100%;
+    background-color: yellow;
+    border: solid black
+    
+}
+
+
+
+
+.sections img {
+    width: 100%;
+    height: 65%;
+    
+    border-bottom-style: dotted;
+        
+}
+
+
+.sections2 img {
+    width: 100%;
+    height: 65%;
+    border-bottom-style: dotted;
+    
+    
+
+}
+
+
+
+
+.textotarj1 {
+    
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2px 2px 2px 2px;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+}
+
+.textotarj2 {
+
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2px 2px 2px 2px;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    
+
+}
+
+.aside-index {
+    border: solid black;
+    text-align: justify;
+    align-content: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    
+}
+
+.aside-index p {
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+
+    .flex-section {
+    
+        display: grid;
+        
+    
+        grid-template-rows: 10% 45% 45%;
+        grid-template-columns: auto;
+        
+        
+        grid-template-areas: 
+        
+        "aside-index"
+        "sections"
+        "sections2";
+        row-gap: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+}
+
+.aside-index {
+    background-color: yellow;
+    grid-area: aside-index;
+    border: solid black;
+}
+
+
+
+.sections {
+    
+    background-color: yellow;
+    grid-area: sections;
+    height: auto;
+    max-width: 100%;
+    background-color: yellow;
+    border: solid black
+}
+
+.sections2 {
+    
+    background-color: yellow;
+    grid-area: sections2;
+    
+    height: auto;
+    max-width: 100%;
+    background-color: yellow;
+    border: solid black
+    
+}
+
+
+
+
+.sections img {
+    width: 100%;
+    height: 65%;
+    
+    border-bottom-style: dotted;
+        
+}
+
+
+.sections2 img {
+    width: 100%;
+    height: 65%;
+    border-bottom-style: dotted;
+    
+    
+
+}
+
+
+
+
+.textotarj1 {
+    
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2px 2px 2px 2px;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    
+}
+
+.textotarj2 {
+
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2px 2px 2px 2px;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+
+}
+
+.aside-index {
+    
+    text-align: center;
+    align-content: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    
+}
+
+.aside-index p {
+    font-family: cursive;
+}
+
+}
+
+@media (max-width: 2000px) {
+.flex-sections2 {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "sections3 sections4 sections5";
+    
+    
+    
+    column-gap: 3px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.sections3 {
+    grid-area: sections3;
+    max-width: 100%;
+    border-right: solid black;
+    border-top: solid black;
+    border-left: solid black;
+    border-bottom: dotted;
+}
+
+.sections4 {
+    grid-area: sections4;
+    max-width: 100%;
+    
+    
+    border-left: solid black;
+    border-right: solid black;
+    border-top: solid black;
+    border-bottom: dotted;
+}
+
+
+
+.sections5 {
+
+    grid-area: sections5;
+    max-width: 100%;
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom: dotted;
+}
+    
+
+
+.sections3 img {
+    width: 100%;
+    height: 65%;
+    border-bottom-style: dotted;
+}
+
+
+
+
+
+
+.sections4 img {
+    width: 100%;
+    height: 65%;
+    border-bottom-style: dotted;
+    
+}
+
+
+
+.sections5 img {
+    width: 100%;
+    height: 65%;
+    border-bottom-style: dotted;
+}
+
+
+.textotarj3 {
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+}
+
+.textotarj4 {
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+}
+
+.textotarj5 {
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+    .flex-sections2 {
+
+        
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto; 
+        grid-template-areas: 
+        "sections3"
+        "sections4" 
+        "sections5";
+        
+        
+        
+        row-gap: 4px;
+        margin-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        
+    }
+    
+    .sections3 {
+        grid-area: sections3;
+        max-width: 100%;
+        border-right: solid black;
+        border-top: solid black;
+        border-left: solid black;
+        border-bottom: dotted;
+    }
+    
+    .sections4 {
+        grid-area: sections4;
+        max-width: 100%;
+        
+        
+        border-left: solid black;
+        border-right: solid black;
+        border-top: solid black;
+        border-bottom: dotted;
+    }
+    
+    
+    
+    .sections5 {
+    
+        grid-area: sections5;
+        max-width: 100%;
+        border-left: solid black;
+        border-right: solid black;
+        border-bottom: dotted;
+    }
+        
+    
+    
+    .sections3 img {
+        width: 100%;
+        height: 65%;
+        border-bottom-style: dotted;
+    }
+    
+    
+    
+    
+    
+    
+    .sections4 img {
+        width: 100%;
+        height: 65%;
+        border-bottom-style: dotted;
+        
+    }
+    
+    
+    
+    .sections5 img {
+        width: 100%;
+        height: 65%;
+        border-bottom-style: dotted;
+    }
+    
+    
+    .textotarj3 {
+        text-align: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    }
+    
+    .textotarj4 {
+        text-align: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    }
+    
+    .textotarj5 {
+        text-align: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    }
+}
+
+
+@media (max-width: 2000px) {
+
+.marcas {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "marca1 marca2 marca3 marca4";
+    column-gap: 2px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 12px;
+}
+
+.marca1 {
+grid-area: marca1;
+border: solid black;
+
+}
+
+.marca2 {
+grid-area: marca2;
+border: solid black;
+
+
+}
+
+.marca3 {
+grid-area: marca3;
+border: solid black;
+}
+
+.marca4 {
+grid-area: marca4;
+border: solid black
+}
+
+.marca1 img {
+    width: 100%;
+    height: 65%;
+    border-bottom: dotted;
+
+}
+
+.marca2 img {
+    width: 100%;
+    height: 65%;
+    border-bottom: dotted;
+
+}
+
+.marca3 img {
+    width: 100%;
+    height: 65%;
+    border-bottom: dotted;
+
+}
+
+.marca4 img {
+    width: 100%;
+    height: 65%;
+    border-bottom: dotted;
+
+
+}
+.textomarca1 {
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+
+}
+
+.textomarca2 {
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+
+}
+
+.textomarca3 {
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+
+
+}
+
+.textomarca4 {
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+
+
+}
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+    .marcas {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 50% auto;
+        grid-template-areas:  
+        "marca1 marca2" 
+        "marca3 marca4";
+        column-gap: 2px;
+        row-gap: 2px;
+        margin-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+    }
+    
+    .marca1 {
+    grid-area: marca1;
+    border: solid black;
+
+    
+    }
+    
+    .marca2 {
+    grid-area: marca2;
+    border: solid black;
+    
+    
+    }
+    
+    .marca3 {
+    grid-area: marca3;
+    border: solid black;
+    margin-bottom: 3px;
+    
+    }
+    
+    .marca4 {
+    grid-area: marca4;
+    border: solid black;
+    margin-bottom: 3px;
+    }
+    
+    .marca1 img {
+        width: 100%;
+        height: 65%;
+        border-bottom: dotted;
+    
+    }
+    
+    .marca2 img {
+        width: 100%;
+        height: 65%;
+        border-bottom: dotted;
+    
+    }
+    
+    .marca3 img {
+        width: 100%;
+        height: 65%;
+        border-bottom: dotted;
+    
+    }
+    
+    .marca4 img {
+        width: 100%;
+        height: 65%;
+        border-bottom: dotted;
+    
+    
+    }
+    .textomarca1 {
+        text-align: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    
+    }
+    
+    .textomarca2 {
+        text-align: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    
+    }
+    
+    .textomarca3 {
+        text-align: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    
+    
+    }
+    
+    .textomarca4 {
+        text-align: center;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    
+    
+    }
+
+}
+
+@media (max-width: 2000px) {
+.footer-resp {
+    display: none;
+}
+.footer-desktop {
+    background-color: black;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2px;
+    
+}
+
+.cajas {
+    border: solid black;
+    max-width: 100%;
+    padding: 2%
+}
+
+.icono {
+    width: 30px;
+    height: auto;
+}
+
+.texto-footer {
+    color: yellow;
+    font-family: cursive;
+    font-size: small;
+}
+
+
+}
+
+@media (min-width: 0px) and (max-width:480px) {
+    .footer-desktop {
+        display: none;
+    }
+    .footer-resp {
+        position: static;
+        background-color: black;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+                
+    } 
+    .nav-responsive {
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+        
+
+    }
+    .nav-responsive ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex
+    }
+    .nav-responsive li {
+        
+        margin-right: 10px;
+
+    }
+    .iconoss {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .iconosss {
+        width: 50px;
+        height: 50px;
+    }
+
+    .iconitos {
+        height: 25px;
+        width: 25px;
+    }
+    .text-span-resp {
+        font-size: x-small;
+        text-align: center;
+        color: white;
+    }
+}
+    
+    
+/*css de la página NOSOTROS a partir de aquí*/ 
+
+/*tanto el header como el footer, repiten para desktop como para responsive
+
+@media (max-width: 2000px) {
+
+
+.section-nosotros {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+    "article-nosotros comentario";
+    column-gap: 3px;
+    
+    
+    padding-left: 3px;
+    padding-right: 8.5px;
+}
+
+.article-nosotros {
+
+    grid-area: article-nosotros;
+    border-top: solid black;
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom: dotted;
+    
+
+}
+
+.comentario {
+
+    grid-area: comentario;
+    border-top: solid black;
+    border-bottom: dotted;
+    border-right: solid black;
+    border-left: solid black;
+    display: flex;
+    
+}
+
+.parrafo-nosotros {
+   text-align: center;
+   padding-left: 2px;
+   padding-right: 2px;
+   font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+   
+}
+
+.parrafo-aside {
+    
+    justify-content: center;
+    align-content: center;
+    padding-left: 3%;
+    padding-right: 2px;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+    .section-nosotros {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 70% auto;
+        grid-template-areas: 
+        "article-nosotros" 
+        "comentario";
+        row-gap: 3px;
+        
+        
+        padding-left: 3px;
+        padding-right: 8.5px;
+    }
+    
+    .article-nosotros {
+    
+        grid-area: article-nosotros;
+        border-top: solid black;
+        border-left: solid black;
+        border-right: solid black;
+        border-bottom: solid black;
+        overflow:auto;
+        
+    
+    }
+    
+    .comentario {
+    
+        grid-area: comentario;
+        border-top: solid black;
+        border-bottom: dotted;
+        border-right: solid black;
+        border-left: solid black;
+        display: flex;
+        max-height: 100%;
+    }
+    
+    .parrafo-nosotros {
+       text-align: center;
+       padding-left: 2px;
+       padding-right: 2px;
+       font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+       
+    }
+    
+    .parrafo-aside {
+        
+        justify-content: center;
+        align-content: center;
+        padding-left: 3%;
+        padding-right: 2px;
+        font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    }
+    
+    }
+
+
+@media (max-width: 2000px) {
+
+.padreImg {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "loc1 loc2";
+    padding-top: 10px;
+    padding-left: 3px;
+    padding-right: 5px;
+    
+    
+
+}
+
+    
+.loc1 {
+
+    grid-area: loc1;
+    border-left: solid black;
+    border-top: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
+    margin-right: 2px;
+    margin-bottom: 2px;
+
+
+}
+
+.loc2 {
+
+    grid-area: loc2;
+    border-left: solid black;
+    border-right: solid black;
+    border-top: solid black;
+    border-bottom: solid black;
+    margin-left: 2px;
+    margin-bottom: 2px;
+
+
+
+}
+
+.imglocal1 {
+    width: 100%;
+    height: 65%;
+    border-bottom: dotted;
+
+}
+
+.imglocal2 {
+
+    width: 100%;
+    height: 65%;
+    border: dotted;
+}
+
+}
+
+.parrafo-imagenes {
+    
+    text-align: center;
+    
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: "Archivo negro"; src: url("../fonts/ArchivoBlack-Regular.ttf");
+    
+    
+
+}
