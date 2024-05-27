@@ -211,7 +211,7 @@ body {
 }
 
 
-/*main
+/*main*/
 
 @media (max-width: 2000px) {
 
@@ -972,7 +972,7 @@ border: solid black
     
     }
 
-}
+} /*
 
 @media (max-width: 2000px) {
 .footer-resp {
