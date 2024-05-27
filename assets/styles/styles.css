@@ -1,3 +1,5 @@
+ /*
+ 
  * { 
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ header {
 
 /*la idea sería, como marca el boceto presentado, que los logos de instagram y de facebook estén a la derecha del encabezado. Lo voy a terminar de aplicar cuando utilice flexbox. Intenté hacerlo sin ello (solo con float) pero no me salió, seguiré repasando y practicando*/
 
-nav {
+/*nav {
     padding: 1%;
 }
 nav a {
@@ -91,7 +93,7 @@ footer {
     padding: 1%;
 
 
-} 
+} */
 
 
 
@@ -99,14 +101,14 @@ footer {
 /*stylos 2da pre entrega*/
 
 
-/* body {
+body {
     background-color: yellow;
     margin: 0;
     padding: 0;
 }
 
 
-/*header
+/*header*/
 @media (max-width: 2000px) {
 .flex-container {
 
