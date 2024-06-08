@@ -139,21 +139,28 @@
             
             <ul class="lista-nav">
                 <li>
-                    <a class="btn btn-primary btn-sm" href="../index.html" role="button">INICIO</a>
+                    <a class="btn btn-primary btn-sm  miClaseButon" href="../index.html" role="button">INICIO</a>
                 </li>
 
                 
 
                 <li>
-                    <a class="btn btn-primary btn-sm" href="./nosotros.html" role="button">NOSOTROS</a>
+                    <a class="btn btn-primary btn-sm miClaseButon" href="./nosotros.html" role="button">NOSOTROS</a>
+
                 </li>
 
                 <li>
-                    <a class="btn btn-primary btn-sm" href="./ofertas.html" role="button">OFERTAS</a>
+                    <a class="btn btn-primary btn-sm miClaseButon" href="./ofertas.html" role="button">OFERTAS</a>
+
+                </li>
+
+
+                <li>
+                    <a class="btn btn-primary btn-sm miClaseButon" href="./ubicacion.html" role="button">UBICACIÓN</a>
                 </li>
 
                 <li>
-                    <a class="btn btn-primary btn-sm" href="./ubicacion.html" role="button">UBICACIÓN</a>
+                    <a class="btn btn-primary btn-sm miClaseButon" href="./contactoypedidos.html" role="button">CONTACTO Y PEDIDOS</a>
                 </li>
             </ul>
         </nav>
@@ -165,66 +172,99 @@
     
 
     <main>
-        <section>
+        
         <H1 class="tituloPrincipal">CONTACTO Y PEDIDOS</H1>
-        <article>
+        
 
     
         
-            <div>
-                <p>
-                    Si queres hacernos una consulta o realizar un pedido para luego retirarlo por nuestro local, completa el siguiente formulario y nos contactaremos con vos.
+            <div class="div-contactos">
+                <p class="p-contactos">
+                    Si queres hacernos una consulta o realizar un pedido, completa el siguiente formulario y nos contactaremos con vos.
 
                 </p>
             <div>
                 <h2 class="subtitulo">FORMULARIO</h2>
-                <form>
-                    <ol>
-                        <li>
-                    
-                <label for="userName">
-                    Nombre y Apellido
-                </label>
-                <input id="userName" type="text" placeholder="Ingresa tu nombre">
-                        </li>
-                        <li>
-                <label for="Teléfono">
-                    Teléfono
-                </label>
-                <input id="Teléfono" type="text" placeholder="Ingresa tu teléfono">
-            </li>
-            <li>
-                <label for="Email">
-                    Correo electrónico
-                </label>
-                <input id="Email" type="text" placeholder="Ingresa tu Correo">
-            </li>
-                <li>
-                <label for="text">
-                    Escribinos tu consulta o pedido
-                </label>
-                </li>
-                </ol>
-                <ul>
-                    <li>
-                <textarea name="fieldText" 
-                id="Text" cols="30" rows="10" placeholder="Ingresa tu texto aquí"> </textarea> 
-            </li>
-            </ul>
-            
+
+            <section class="conteiner-form">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                      <label for="validationCustom01" class="form-label">Ingresa tu nombre</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustom02" class="form-label">Ingresa tu apellido</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="Apellido" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustomUsername" class="form-label">Ingresa tu email</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom03" class="form-label">Ingresa tu teléfono</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Ingrese su consulta o pedido aquí</label>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary mi-btn-form" type="submit">Enviar formulario</button>
+                      </div>
+                    </form>
+
+            </section> 
+
+            <div class="conteiner2-cyp">
                 
-            
-            <ul>
+                
 
-            <li>
+                <div class="caja-conteiner2">
+                        <p class="p-conteiner2-cyp">
+                            Contamos con sistema de compra Take Away. Pagando en efectivo tenes un 10% de descuento. También podes comunicarte con nosotros vía whatss app. Contactanos y te preparamos tú pedido.
+                            Dirección: calle 456 e/409 y 410 n° 922. J.M. Gutiérrez.
+                        </p>
 
-            <input type="submit" value="Enviar">
-            </li>
-            </ul>
+                </div>
 
-                </form>
-            </article>
-        </section>
+                 <div class="caja-conteiner3">
+                    <div>
+                        <img class="img-container2" src="./../assets/multimedia/whatsapp.svg" alt="">
+                    </div>
+                    <div>    
+                    <p>1124562483</p>
+                    <div>
+                </div>
+
+
+            </div>
+
+                
+                
+
+
+
+
+
+
+        
     </main>
 
     <footer class="footer-desktop">

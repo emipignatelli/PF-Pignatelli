@@ -108,16 +108,17 @@
 <!-- A partir de aquí es la segunda Pre entrega -->
 
  <body>
+
     <header class="flex-container">
 
         <div class="logo">
-            <img src="./assets/multimedia/Logo header.png" alt="">
+            <img src= "../assets/multimedia/Logo header.png" alt="">
         </div>
 
         <div class="iconos">
-            <img src="./assets/multimedia/logodeinstagram.svg" alt=""> <span class="texto-iconos"> Instagram:
+            <img src="../assets/multimedia/logodeinstagram.svg" alt=""> <span class="texto-iconos"> Instagram:
                 PolirubroCarmen </span>
-            <img src="./assets/multimedia/logodefacebook.svg" alt=""> <span class="texto-iconos"> Facebook:
+            <img src="../assets/multimedia/logodefacebook.svg" alt=""> <span class="texto-iconos"> Facebook:
                 PolirubroCarmen </span>
         </div>
 
@@ -125,25 +126,35 @@
             
             <ul class="lista-nav">
                 <li>
-                    <a class="btn btn-primary btn-sm" href="./pages/nosotros.html" role="button">NOSOTROS</a>
+                    <a class="btn btn-primary btn-sm  miClaseButon" href="index.html" role="button">INICIO</a>
+                </li>
+
+                
+
+                <li>
+                    <a class="btn btn-primary btn-sm miClaseButon" href="./pages/nosotros.html" role="button">NOSOTROS</a>
+
                 </li>
 
                 <li>
-                    <a class="btn btn-primary btn-sm" href="./pages/ofertas.html" role="button">OFERTAS</a>
+                    <a class="btn btn-primary btn-sm miClaseButon" href="./pages/ofertas.html" role="button">OFERTAS</a>
+
+                </li>
+
+
+                <li>
+                    <a class="btn btn-primary btn-sm miClaseButon" href="./pages/ubicacion.html" role="button">UBICACIÓN</a>
                 </li>
 
                 <li>
-                    <a class="btn btn-primary btn-sm" href="./pages/ubicacion.html" role="button">UBICACIÓN</a>
-                </li>
-
-                <li>
-                    <a class="btn btn-primary btn-sm" href="./pages/contactoypedidos.html" role="button">CONTACTO Y PEDIDOS</a>
+                    <a class="btn btn-primary btn-sm miClaseButon" href="./pages/contactoypedidos.html" role="button">CONTACTO Y PEDIDOS</a>
                 </li>
             </ul>
         </nav>
 
 
     </header>
+   
 
     <main class="main">
 
@@ -277,23 +288,22 @@
     <footer class="footer-resp">
     
         <nav class="nav-responsive">
-                <ul>
+                <ul class="ul-responsive">
                     <li class="li-footer-responsive">
-                        <a class="btn btn-primary btn-sm" href="./pages/nosotros.html" role="button">NOSOTROS</a>
-                    </li>
-    
-                    <li>
-                        <a class="btn btn-primary btn-sm" href="./pages/ofertas.html" role="button">OFERTAS</a>
-                    </li>
-    
-                    <li>
-                        <a class="btn btn-primary btn-sm" href="./pages/ubicacion.html" role="button">UBICACIÓN</a>
-                    </li>
-    
-                    <li>
-                        <a class="btn btn-primary btn-sm" href="./pages/contactoypedidos.html" role="button">CONTACTO Y PEDIDOS</a>
+                        <a class="btn btn-primary btn-sm" href="index.html" role="button">INICIO</a>
                     </li>
                 </ul>
+                <div class="btn-group dropup menu-hamburguesa">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menú
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./pages/nosotros.html">Nosotros</a></li>
+                      <li><a class="dropdown-item" href="./pages/ofertas.html">Ofertas</a></li>
+                      <li><a class="dropdown-item" href="./pages/ubicacion.html">Ubicación</a></li>
+                      <li><a class="dropdown-item" href="./pages/contactoypedidos.html">Contacto y pedidos</a></li>
+                    </ul>
+                  </div>
         </nav>
         <div class="iconoss">
             <div class="iconosss"><img class= "iconitos" src="./assets/multimedia/logodefacebook.svg" alt=""></div>
