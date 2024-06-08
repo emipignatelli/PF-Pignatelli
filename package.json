@@ -1,0 +1,28 @@
+{
+  "name": "polirubro-carmen",
+  "version": "1.0.0",
+  "description": "Este proyecto consiste en levantar un sitio web respecto del negocio Polirubro Carmen. A partir del mismo intentaremos mostrar, ofrecer y vender todos nuestros productos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emipignatelli/PreEntrega3-Pignatelli.git"
+  },
+  "keywords": [
+    "almacen",
+    "comercio",
+    "marcas",
+    "productos",
+    "comida",
+    "perfumeria",
+    "libreria"
+  ],
+  "author": "Emiliano Pignatelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emipignatelli/PreEntrega3-Pignatelli/issues"
+  },
+  "homepage": "https://github.com/emipignatelli/PreEntrega3-Pignatelli#readme"
+}
