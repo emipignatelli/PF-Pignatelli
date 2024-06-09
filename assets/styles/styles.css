@@ -742,7 +742,7 @@ body {
     gap: 3px;
   }
   .btn-hamburguesa {
-    background-color: yellow;
+    background-color: orange;
     color: black;
     margin-top: 3px;
   }
@@ -815,20 +815,19 @@ body {
   }
   .article-nosotros {
     grid-area: article-nosotros;
-    border-top: solid black;
-    border-left: solid black;
-    border-right: solid black;
-    border-bottom: solid black;
+    border-radius: 5px;
+    margin-top: 5px;
     overflow: auto;
+    background: linear-gradient(to top, grey 25%, white 95%);
   }
   .comentario {
     grid-area: comentario;
-    border-top: solid black;
-    border-bottom: dotted;
-    border-right: solid black;
-    border-left: solid black;
+    border-radius: 5px;
     display: flex;
     max-height: 100%;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(to top, grey 25%, white 95%);
   }
   .parrafo-nosotros {
     text-align: center;
@@ -836,6 +835,7 @@ body {
     padding-right: 2px;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: black;
   }
   .parrafo-aside {
     justify-content: center;
@@ -844,6 +844,7 @@ body {
     padding-right: 2px;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: black;
   }
 }
 @media (max-width: 2000px) {
@@ -885,7 +886,7 @@ body {
   height: 15vh;
   border-radius: 3px;
   margin-top: 5px;
-  font-size: 25px;
+  font-size: 17px;
 }
 
 .parrafo-imagenesh {
@@ -912,408 +913,918 @@ body {
 }
 
 /*CSS DE LA PÁGINA OFERTAS A PARTIR DE AQUÍ*/
-.conteinerVideo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom, black 35%, white 70%);
-  padding-top: 15px;
-  padding-bottom: 15px;
+@media (max-width: 2000px) {
+  .conteinerVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, black 35%, white 70%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .divV {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+  }
+  .video {
+    width: 60vw;
+    height: 50vh;
+    border-radius: 15;
+  }
+  .divCO {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "tarjO tarj1 tarj2" "tarj3 tarj4 tarj5";
+    background-color: black;
+    padding: 4px 4px 4px 4px;
+    gap: 5px;
+  }
+  .tarjO {
+    grid-area: tarjO;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarj1 {
+    grid-area: tarj1;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarj2 {
+    grid-area: tarj2;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarj3 {
+    grid-area: tarj3;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarj4 {
+    grid-area: tarj4;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarj5 {
+    grid-area: tarj5;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgO {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .img1 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .img2 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .img3 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .img4 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .img5 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .imgO {
+    border: 3px solid grey;
+  }
+  .img1 {
+    border: 3px solid grey;
+  }
+  .img2 {
+    border: 3px solid grey;
+  }
+  .img4 {
+    border: 3px solid grey;
+  }
+  .img5 {
+    border: 3px solid grey;
+  }
+  .ptarjO {
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
+  .ptarj1 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
+  .ptarj2 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
+  .ptarj3 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
+  .ptarj4 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
+  .ptarj5 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
+  .boton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    transition: 2s ease;
+  }
+  .boton:hover {
+    background-color: orange;
+    width: 120px;
+    color: black;
+  }
+  .conteinerbootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+  .mi-otra-clase {
+    background-color: black;
+    border-radius: 15px;
+  }
+  .pcolBootstrap {
+    text-align: center;
+    color: white;
+  }
 }
-
-.divV {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 10px;
+@media (min-width: 0px) and (max-width: 480px) {
+  .conteinerVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, orange 10%, white 70%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .divV {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 3px solid grey;
+  }
+  .video {
+    width: 60vw;
+    height: 50vh;
+    border-radius: 15px;
+  }
+  .divCO {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "tarjO tarj1" "tarj2 tarj3" "tarj4 tarj5";
+    background-color: white;
+    padding: 4px 4px 4px 4px;
+    gap: 5px;
+  }
+  .tarjO {
+    grid-area: tarjO;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarj1 {
+    grid-area: tarj1;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarj2 {
+    grid-area: tarj2;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarj3 {
+    grid-area: tarj3;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarj4 {
+    grid-area: tarj4;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarj5 {
+    grid-area: tarj5;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgO {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .img1 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .img2 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .img3 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .img4 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .img5 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+  .imgO {
+    border: 3px solid grey;
+  }
+  .img1 {
+    border: 3px solid grey;
+  }
+  .img2 {
+    border: 3px solid grey;
+  }
+  .img4 {
+    border: 3px solid grey;
+  }
+  .img5 {
+    border: 3px solid grey;
+  }
+  .ptarjO {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+  }
+  .ptarj1 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+  }
+  .ptarj2 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+  }
+  .ptarj3 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+  }
+  .ptarj4 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+  }
+  .ptarj5 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+  }
+  .ptarjO {
+    background-color: rgb(54, 53, 53);
+    border-radius: 3px;
+    border: 1.5px solid black;
+    height: auto;
+  }
+  .boton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    transition: 2s ease;
+  }
+  .conteinerbootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+  .mi-otra-clase {
+    background-color: black;
+    border-radius: 15px;
+  }
+  .pcolBootstrap {
+    text-align: center;
+    color: white;
+  }
+  .ptarj1 {
+    background-color: black;
+    border-radius: 3px;
+    border: 1.5px solid grey;
+    height: auto;
+  }
+  .boton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    transition: 2s ease;
+  }
+  .conteinerbootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+  .mi-otra-clase {
+    background-color: black;
+    border-radius: 15px;
+  }
+  .pcolBootstrap {
+    text-align: center;
+    color: white;
+  }
+  .ptarj2 {
+    background-color: rgb(54, 53, 53);
+    border-radius: 3px;
+    border: 1.5px solid black;
+    height: auto;
+  }
+  .boton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    transition: 2s ease;
+  }
+  .conteinerbootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+  .mi-otra-clase {
+    background-color: black;
+    border-radius: 15px;
+  }
+  .pcolBootstrap {
+    text-align: center;
+    color: white;
+  }
+  .ptarj3 {
+    background-color: black;
+    border-radius: 3px;
+    border: 1.5px solid grey;
+    height: auto;
+  }
+  .boton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    transition: 2s ease;
+  }
+  .conteinerbootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+  .mi-otra-clase {
+    background-color: black;
+    border-radius: 15px;
+  }
+  .pcolBootstrap {
+    text-align: center;
+    color: white;
+  }
+  .ptarj4 {
+    background-color: rgb(54, 53, 53);
+    border-radius: 3px;
+    border: 1.5px solid black;
+    height: auto;
+  }
+  .boton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    transition: 2s ease;
+  }
+  .conteinerbootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+  .mi-otra-clase {
+    background-color: black;
+    border-radius: 15px;
+  }
+  .pcolBootstrap {
+    text-align: center;
+    color: white;
+  }
+  .ptarj5 {
+    background-color: black;
+    border-radius: 3px;
+    border: 1.5px solid grey;
+    height: auto;
+  }
+  .boton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    transition: 2s ease;
+  }
+  .conteinerbootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+  .mi-otra-clase {
+    background-color: black;
+    border-radius: 15px;
+  }
+  .pcolBootstrap {
+    text-align: center;
+    color: white;
+  }
 }
-
-.video {
-  width: 60vw;
-  height: 50vh;
-  border-radius: 15;
-}
-
-.divCO {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: "tarjO tarj1 tarj2" "tarj3 tarj4 tarj5";
-  background-color: black;
-  padding: 4px 4px 4px 4px;
-  gap: 5px;
-}
-
-.tarjO {
-  grid-area: tarjO;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tarj1 {
-  grid-area: tarj1;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tarj2 {
-  grid-area: tarj2;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tarj3 {
-  grid-area: tarj3;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tarj4 {
-  grid-area: tarj4;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tarj5 {
-  grid-area: tarj5;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.imgO {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-}
-
-.img1 {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-}
-
-.img2 {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-}
-
-.img3 {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-}
-
-.img4 {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-}
-
-.img5 {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-}
-
-.imgO {
-  border: 3px solid grey;
-}
-
-.img1 {
-  border: 3px solid grey;
-}
-
-.img2 {
-  border: 3px solid grey;
-}
-
-.img4 {
-  border: 3px solid grey;
-}
-
-.img5 {
-  border: 3px solid grey;
-}
-
-.ptarjO {
-  text-align: center;
-  justify-content: center;
-  color: white;
-}
-
-.boton {
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 10px;
-  background-color: red;
-  color: white;
-  transition: 2s ease;
-}
-
-.boton:hover {
-  background-color: orange;
-  width: 120px;
-  color: black;
-}
-
-.conteinerbootstrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom, black 15%, white 60%);
-  padding: 40px 10px 10px 10px;
-  gap: 10px;
-}
-
-.mi-otra-clase {
-  background-color: black;
-  border-radius: 15px;
-}
-
-.pcolBootstrap {
-  text-align: center;
-  color: white;
-}
-
 /*Página UBICACIÓN A PARTIR DE AQUÍ*/
-.sectionUbi {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../multimedia/cielo.jpg");
-  background-size: cover;
+@media (max-width: 2000px) {
+  .sectionUbi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../multimedia/cielo.jpg");
+    background-size: cover;
+  }
+  .articleUbi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pUbi {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .pUbi:hover {
+    color: white;
+    transition-delay: 2s;
+  }
+  .mapaUbi {
+    border-radius: 10px;
+    height: 40vh;
+    width: 80vh;
+  }
+  .mi-conteinerUbi {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "mi-cardUbi mi-cardUbi1";
+    gap: 1px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 5px 5px 5px;
+    background: linear-gradient(to bottom, white 10%, orange 70%);
+  }
+  .mi-cardUbi {
+    grid-area: mi-cardUbi;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+  }
+  .mi-cardUbi1 {
+    grid-area: mi-cardUbi1;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+  }
+  .mi-cardUbi {
+    background-color: rgb(54, 53, 53);
+  }
+  .mi-cardUbi1 {
+    background-color: black;
+  }
+  .imgUbi {
+    height: 50vh;
+    width: auto;
+    padding: 2px 2px 2px 2px;
+    border-radius: 6px;
+    background-color: black;
+  }
+  .card-body-Ubi {
+    border: none;
+  }
+  .mi-h5 {
+    text-align: center;
+    text-justify: auto;
+    color: white;
+  }
+  .card-p-Ubi {
+    text-align: center;
+    color: white;
+  }
+  .asideUbi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, grey 10%, white 70%);
+    width: 75vw;
+    height: auto;
+    border-radius: 3px;
+    margin: 3px 3px 3px 3px;
+  }
+  .mi-Row-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 2px 2px 2px;
+  }
+  .mi-otra-col-p {
+    display: flex;
+    background-color: black;
+    margin: 2px 2px 2px 2px;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+  }
+  .p-aside-Ubi {
+    text-align: center;
+    text-justify: center;
+    font-size: medium;
+    color: white;
+    border-radius: 5px;
+  }
 }
-
-.articleUbi {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 2000px) and (min-width: 0px) and (max-width: 480px) {
+  .sectionUbi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../multimedia/cielo.jpg");
+    background-size: cover;
+  }
+  .articleUbi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pUbi {
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+  }
+  .mapaUbi {
+    border-radius: 10px;
+    height: 40vh;
+    width: 80vh;
+  }
+  .mi-conteinerUbi {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "mi-cardUbi" "mi-cardUbi1";
+    gap: 1px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 5px 5px 5px;
+    background: linear-gradient(to bottom, white 10%, orange 70%);
+  }
+  .mi-cardUbi {
+    grid-area: mi-cardUbi;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+  }
+  .mi-cardUbi1 {
+    grid-area: mi-cardUbi1;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+  }
+  .mi-cardUbi {
+    background-color: rgb(54, 53, 53);
+  }
+  .mi-cardUbi1 {
+    background-color: black;
+  }
+  .imgUbi {
+    height: 50vh;
+    width: auto;
+    padding: 2px 2px 2px 2px;
+    border-radius: 6px;
+    background-color: black;
+  }
+  .card-body-Ubi {
+    border: none;
+  }
+  .mi-h5 {
+    text-align: center;
+    text-justify: auto;
+    color: white;
+  }
+  .card-p-Ubi {
+    text-align: center;
+    color: white;
+  }
+  .asideUbi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, grey 10%, white 70%);
+    width: 75vw;
+    height: auto;
+    border-radius: 3px;
+    margin: 3px 3px 3px 3px;
+  }
+  .mi-Row-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 2px 2px 2px;
+  }
+  .mi-otra-col-p {
+    display: flex;
+    background-color: black;
+    margin: 2px 2px 2px 2px;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+  }
+  .p-aside-Ubi {
+    text-align: center;
+    text-justify: center;
+    font-size: medium;
+    color: white;
+    border-radius: 5px;
+  }
 }
-
-.pUbi {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.pUbi:hover {
-  color: white;
-  transition-delay: 2s;
-}
-
-.mapaUbi {
-  border-radius: 10px;
-  height: 40vh;
-  width: 80vh;
-}
-
-.mi-conteinerUbi {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: "mi-cardUbi mi-cardUbi1";
-  gap: 1px;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 5px 5px 5px 5px;
-  background: linear-gradient(to bottom, white 10%, orange 70%);
-}
-
-.mi-cardUbi {
-  grid-area: mi-cardUbi;
-  margin: 5px 5px 5px 5px;
-  padding: 2px 2px 2px 2px;
-}
-
-.mi-cardUbi1 {
-  grid-area: mi-cardUbi1;
-  margin: 5px 5px 5px 5px;
-  padding: 2px 2px 2px 2px;
-}
-
-.mi-cardUbi {
-  background-color: rgb(54, 53, 53);
-}
-
-.mi-cardUbi1 {
-  background-color: black;
-}
-
-.imgUbi {
-  height: 50vh;
-  width: auto;
-  padding: 2px 2px 2px 2px;
-  border-radius: 6px;
-  background-color: black;
-}
-
-.card-body-Ubi {
-  border: none;
-}
-
-.mi-h5 {
-  text-align: center;
-  text-justify: auto;
-  color: white;
-}
-
-.card-p-Ubi {
-  text-align: center;
-  color: white;
-}
-
-.asideUbi {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to top, grey 10%, white 70%);
-  width: 75vw;
-  height: auto;
-  border-radius: 3px;
-  margin: 3px 3px 3px 3px;
-}
-
-.mi-Row-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2px 2px 2px 2px;
-}
-
-.mi-otra-col-p {
-  display: flex;
-  background-color: black;
-  margin: 2px 2px 2px 2px;
-  border-radius: 2px;
-  padding: 5px 5px 5px 5px;
-}
-
-.p-aside-Ubi {
-  text-align: center;
-  text-justify: center;
-  font-size: medium;
-  color: white;
-  border-radius: 5px;
-}
-
 /*a partir de aquí página contactos y pedidos*/
-.div-contactos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-}
-
-.p-contactos {
-  margin: 5px 5px 5px 5px;
-  background-color: black;
-  border-radius: 3px;
-  padding: 3px 3px 3px 3px;
-  font-size: large;
-  color: white;
-}
-
-.conteiner-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white(46, 45, 45);
-  margin: 8px 8px 8px 8px;
-  border-radius: 5px;
-  background-color: burlywood;
-  padding: 10px 10px 10px 10px;
-}
-
-.mi-btn-form {
-  color: black;
-  background-color: white;
-  border: black;
-}
-
-.mi-btn-form:hover {
-  background-color: cornflowerblue;
-}
-
-.conteiner2-cyp {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: auto;
-  grid-template-areas: "caja-conteiner2 caja-conteiner3";
-  gap: 5px;
-}
-
-.caja-conteiner2 {
-  grid-area: caja-conteiner2;
-  padding: 5px 5px 5px 5px;
-  background: linear-gradient(to right, aqua 10%, white 95%);
-  border-radius: 5px;
-  margin: 15px 15px 20px 15px;
-}
-
-.caja-conteiner3 {
-  grid-area: caja-conteiner3;
-  padding: 5px 5px 5px 5px;
-  background: linear-gradient(to left, aqua 10%, white 95%);
-  border-radius: 5px;
-  margin: 15px 15px 15px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.p-conteiner2-cyp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-@keyframes crecer {
-  0% {
-    transform: scale(1);
+@media (max-width: 2000px) {
+  .div-contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
   }
-  50% {
-    transform: scale(1.5);
+  .p-contactos {
+    margin: 5px 5px 5px 5px;
+    background-color: black;
+    border-radius: 3px;
+    padding: 3px 3px 3px 3px;
+    font-size: large;
+    color: white;
   }
-  100% {
-    transform: scale(1);
+  .conteiner-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white(46, 45, 45);
+    margin: 8px 8px 8px 8px;
+    border-radius: 5px;
+    background-color: burlywood;
+    padding: 10px 10px 10px 10px;
+  }
+  .mi-btn-form {
+    color: black;
+    background-color: white;
+    border: black;
+  }
+  .mi-btn-form:hover {
+    background-color: cornflowerblue;
+  }
+  .conteiner2-cyp {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "caja-conteiner2 caja-conteiner3";
+    gap: 5px;
+  }
+  .caja-conteiner2 {
+    grid-area: caja-conteiner2;
+    padding: 5px 5px 5px 5px;
+    background: linear-gradient(to right, aqua 10%, white 95%);
+    border-radius: 5px;
+    margin: 15px 15px 20px 15px;
+  }
+  .caja-conteiner3 {
+    grid-area: caja-conteiner3;
+    padding: 5px 5px 5px 5px;
+    background: linear-gradient(to left, aqua 10%, white 95%);
+    border-radius: 5px;
+    margin: 15px 15px 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .p-conteiner2-cyp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @keyframes crecer {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .img-container2 {
+    animation: crecer 1s infinite;
   }
 }
-.img-container2 {
-  animation: crecer 1s infinite;
+@media (min-width: 0px) and (max-width: 480px) and (max-width: 2000px) {
+  .div-contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  .p-contactos {
+    margin: 5px 5px 5px 5px;
+    background-color: black;
+    border-radius: 3px;
+    padding: 3px 3px 3px 3px;
+    font-size: large;
+    color: white;
+  }
+  .conteiner-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white(46, 45, 45);
+    margin: 8px 8px 8px 8px;
+    border-radius: 5px;
+    background-color: burlywood;
+    padding: 10px 10px 10px 10px;
+  }
+  .mi-btn-form {
+    color: black;
+    background-color: white;
+    border: black;
+  }
+  .mi-btn-form:hover {
+    background-color: cornflowerblue;
+  }
+  .conteiner2-cyp {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "caja-conteiner2 caja-conteiner3";
+    gap: 5px;
+  }
+  .caja-conteiner2 {
+    grid-area: caja-conteiner2;
+    padding: 5px 5px 5px 5px;
+    background: linear-gradient(to right, aqua 10%, white 95%);
+    border-radius: 5px;
+    margin: 15px 15px 20px 15px;
+  }
+  .caja-conteiner3 {
+    grid-area: caja-conteiner3;
+    padding: 5px 5px 5px 5px;
+    background: linear-gradient(to left, aqua 10%, white 95%);
+    border-radius: 5px;
+    margin: 15px 15px 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .p-conteiner2-cyp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @keyframes crecer {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .img-container2 {
+    animation: crecer 1s infinite;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
