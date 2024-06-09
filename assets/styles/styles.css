@@ -885,6 +885,7 @@ body {
   height: 15vh;
   border-radius: 3px;
   margin-top: 5px;
+  font-size: 25px;
 }
 
 .parrafo-imagenesh {
@@ -895,10 +896,19 @@ body {
   font-family: "Archivo negro";
   src: url("../fonts/ArchivoBlack-Regular.ttf");
   color: white;
-  background: linear-gradient(to bottom, grey 10%, white 70%);
   height: 15vh;
   border-radius: 3px;
   margin-top: 5px;
+  font-size: 18px;
+}
+
+.parrafo-imageneshmyv {
+  color: black;
+  background: linear-gradient(to bottom, grey 3%, white 70%);
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-left: 3px;
 }
 
 /*CSS DE LA PÁGINA OFERTAS A PARTIR DE AQUÍ*/
