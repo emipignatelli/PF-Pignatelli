@@ -413,6 +413,7 @@ body {
     grid-template-areas: "sections3" "sections4" "sections5";
     row-gap: 4px;
     margin-top: 15px;
+    margin-bottom: 15px;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
@@ -421,10 +422,12 @@ body {
     grid-area: sections3;
     max-width: 100%;
     border: none;
+    margin-bottom: 10px;
   }
   .sections4 {
     grid-area: sections4;
     max-width: 100%;
+    border-top: 5px;
     border: none;
   }
   .sections5 {
@@ -450,6 +453,7 @@ body {
     height: 65%;
     border-radius: 5px;
     border: 5px solid grey;
+    margin-top: 5px;
   }
   .textotarj3 {
     text-align: center;
@@ -461,7 +465,7 @@ body {
     background-color: red;
     border-radius: 5px;
     border: 2px solid black;
-    margin: 5px 5px 10px 10px;
+    margin: 5px 10px 10px 10px;
   }
   .textotarj4 {
     text-align: center;
