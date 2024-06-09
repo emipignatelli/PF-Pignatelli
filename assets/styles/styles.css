@@ -422,7 +422,7 @@ body {
     grid-area: sections3;
     max-width: 100%;
     border: none;
-    margin-bottom: 20px;
+    margin-top: 25px;
   }
   .sections4 {
     grid-area: sections4;
