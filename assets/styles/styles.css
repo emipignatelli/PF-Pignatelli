@@ -827,7 +827,7 @@ body {
     max-height: 100%;
     text-align: center;
     justify-content: center;
-    background: linear-gradient(to top, grey 25%, white 95%);
+    background-color: black;
   }
   .parrafo-nosotros {
     text-align: center;
@@ -844,7 +844,7 @@ body {
     padding-right: 2px;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
-    color: black;
+    color: white;
   }
 }
 @media (max-width: 2000px) {
@@ -1784,7 +1784,7 @@ body {
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: auto;
-    grid-template-areas: "caja-conteiner2 caja-conteiner3";
+    grid-template-areas: "caja-conteiner2" "caja-conteiner3";
     gap: 5px;
   }
   .caja-conteiner2 {
