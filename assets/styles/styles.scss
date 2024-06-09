@@ -4,7 +4,7 @@
 
  }
 
-/*stylos 2da pre entrega*/
+
 
 body {
   background-color: black;
@@ -47,7 +47,7 @@ body {
   .texto-iconos {
     font-size: large;
     font-family: "Times New Roman", Times, serif;
-    color: yellow;
+    color: white;
   }
 
   .navegacion {
@@ -67,17 +67,21 @@ body {
   .navegacion ul li a {
     font-family: cursive;
     font-size: medium;
-    color: yellow;
+    color: black;
     text-decoration: none;
     
   }
 
   .navegacion ul li a:hover {
-    background-color: blue;
+    background-color: cornflowerblue;
+    transition-delay: 1s;
   }
 
   .miClaseButon {
     margin-bottom: 3px;
+    background-color: orange;
+    border-radius: 2px;
+    border: 1px solid black;
   }
   
 }
@@ -112,10 +116,13 @@ body {
 /*main*/
 
 @media (max-width: 2000px) {
+
+
   main {
-    background-color: yellow;
+    background-color: black;
     height: 70%;
     margin-top: 110px;
+    
   }
 }
 
@@ -133,11 +140,12 @@ body {
 @mixin estilo-tituloPrincipal-desktop {
 
   text-align: center;
-  margin: 1px;
-  padding-top: 80px;
+  
+  padding-top: 120px;
   font-family: "PermanentMarker-Regular";
   src: url("../fonts/PermanentMarker-Regular.ttf");
   font-weight: bold;
+  background: linear-gradient(to bottom, orange 10%, white);
   
 }
 
@@ -151,8 +159,10 @@ body {
 
 .subtitulo {
   text-align: center;
-  padding-top: 10px;
-  padding-left: 4px;
+  
+
+  
+  
   font-size: medium;
   font-family: " sora ";
   src: url("../fonts/Sora-VariableFont_wght.ttf");
@@ -247,7 +257,7 @@ body {
   }
 
   .aside-index {
-    background-color: yellow;
+    background-color: black;
     grid-area: aside-index;
   }
 
@@ -257,31 +267,33 @@ body {
     grid-area: sections;
     height: auto;
     max-width: 100%;
-    background-color: yellow;
-    border: solid black;
+    background-color: black;
+    
   }
 
   .sections2 {
-    background-color: yellow;
+    background-color: black;
     grid-area: sections2;
 
     height: auto;
     max-width: 100%;
-    background-color: yellow;
-    border: solid black;
+    
+    
   }
 
   .sections img {
     width: 100%;
     height: 65%;
 
-    border-bottom-style: dotted;
+    border-radius: 5px;
+    border: 3px solid grey;
   }
 
   .sections2 img {
     width: 100%;
     height: 65%;
-    border-bottom-style: dotted;
+    border-radius: 5px;
+    border: 3px solid gray;
   }
 
   .textotarj1 {
@@ -290,6 +302,17 @@ body {
     padding: 2px 2px 2px 2px;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 5px 5px 10px 10px;
+    font-size: 20px;
+    height: 35vh;
+
+
+
+    
   }
 
   .textotarj2 {
@@ -298,19 +321,32 @@ body {
     padding: 2px 2px 2px 2px;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 5px 5px 10px 10px;
+    font-size: 20px;
+    height: 35vh;
+    
+
+
   }
 
   .aside-index {
-    border: solid black;
+    border: none;
     text-align: justify;
     align-content: center;
     padding-left: 4px;
     padding-right: 4px;
+    height: auto;
   }
 
   .aside-index p {
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: white;
+    
   }
 }
 
@@ -351,7 +387,7 @@ body {
     @include estilo-aside-mobile;
     grid-area: aside-index;
     border-radius: 5px;
-    border: 3px solid orange;
+    border: 3px solid black;
     
   }
 
@@ -405,7 +441,6 @@ body {
   .textotarj1 {
     text-align: center;
     box-sizing: border-box;
-    
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
     font-size: 25px;
@@ -446,6 +481,7 @@ body {
 
   .aside-index p {
     font-family: cursive;
+    color: black;
   }
 }
 
@@ -462,49 +498,48 @@ body {
     padding-right: 5px;
   }
 
+  
+
+  
   .sections3 {
     grid-area: sections3;
     max-width: 100%;
-    border-right: solid black;
-    border-top: solid black;
-    border-left: solid black;
-    border-bottom: dotted;
+    background-color: black;
+    
   }
 
   .sections4 {
     grid-area: sections4;
     max-width: 100%;
 
-    border-left: solid black;
-    border-right: solid black;
-    border-top: solid black;
-    border-bottom: dotted;
+    background-color: black;
   }
 
   .sections5 {
     grid-area: sections5;
     max-width: 100%;
-    border-left: solid black;
-    border-right: solid black;
-    border-bottom: dotted;
+    background-color: black;
   }
 
   .sections3 img {
     width: 100%;
-    height: 65%;
-    border-bottom-style: dotted;
+    height: 55%;
+    border-radius: 5px;
+    border: 3px solid grey;
   }
 
   .sections4 img {
     width: 100%;
-    height: 65%;
-    border-bottom-style: dotted;
+    height: 55%;
+    border-radius: 5px;
+    border: 3px solid grey;
   }
 
   .sections5 img {
     width: 100%;
-    height: 65%;
-    border-bottom-style: dotted;
+    height: 55%;
+    border-radius: 5px;
+    border: 3px solid grey;
   }
 
   .textotarj3 {
@@ -513,6 +548,13 @@ body {
     box-sizing: border-box;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    font-size: 25px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 5px 5px 10px 10px;
+    height: 35vh;
   }
 
   .textotarj4 {
@@ -521,6 +563,13 @@ body {
     box-sizing: border-box;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    font-size: 25px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 5px 5px 10px 10px;
+    height: 35vh;
   }
 
   .textotarj5 {
@@ -529,6 +578,13 @@ body {
     box-sizing: border-box;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    font-size: 25px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 5px 5px 10px 10px;
+    height: 35vh;
   }
 }
 
@@ -677,25 +733,29 @@ body {
   .marca1 img {
     width: 100%;
     height: 65%;
-    border-bottom: dotted;
+    border-radius: 5px;
+    border: 3px solid grey;
   }
 
   .marca2 img {
     width: 100%;
     height: 65%;
-    border-bottom: dotted;
+    border-radius: 5px;
+    border: 3px solid grey;
   }
 
   .marca3 img {
     width: 100%;
     height: 65%;
-    border-bottom: dotted;
+    border-radius: 5px;
+    border: 3px solid grey;
   }
 
   .marca4 img {
     width: 100%;
     height: 65%;
-    border-bottom: dotted;
+    border-radius: 5px;
+    border: 3px solid grey;
   }
   .textomarca1 {
     text-align: center;
@@ -703,6 +763,7 @@ body {
     box-sizing: border-box;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: white;
   }
 
   .textomarca2 {
@@ -711,6 +772,7 @@ body {
     box-sizing: border-box;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: white;
   }
 
   .textomarca3 {
@@ -719,6 +781,7 @@ body {
     box-sizing: border-box;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: white;
   }
 
   .textomarca4 {
@@ -727,6 +790,7 @@ body {
     box-sizing: border-box;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: white;
   }
 }
 
@@ -863,7 +927,7 @@ body {
   }
 
   .texto-footer {
-    color: yellow;
+    color: orange;
     font-family: cursive;
     font-size: small;
   }
@@ -932,23 +996,20 @@ body {
 
     padding-left: 3px;
     padding-right: 8.5px;
+    
   }
 
   .article-nosotros {
     grid-area: article-nosotros;
-    border-top: solid black;
-    border-left: solid black;
-    border-right: solid black;
-    border-bottom: dotted;
+    border-radius: 5px;
+    border: 3px solid grey;
   }
 
   .comentario {
     grid-area: comentario;
-    border-top: solid black;
-    border-bottom: dotted;
-    border-right: solid black;
-    border-left: solid black;
-    display: flex;
+    display: flex
+    
+  
   }
 
   .parrafo-nosotros {
@@ -957,6 +1018,7 @@ body {
     padding-right: 2px;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: white;
   }
 
   .parrafo-aside {
@@ -966,6 +1028,7 @@ body {
     padding-right: 2px;
     font-family: "Archivo negro";
     src: url("../fonts/ArchivoBlack-Regular.ttf");
+    color: white;
   }
 }
 
@@ -1029,49 +1092,66 @@ body {
     padding-top: 10px;
     padding-left: 3px;
     padding-right: 5px;
+    
   }
 
   .loc1 {
     grid-area: loc1;
-    border-left: solid black;
-    border-top: solid black;
-    border-right: solid black;
-    border-bottom: solid black;
+    
     margin-right: 2px;
     margin-bottom: 2px;
   }
 
   .loc2 {
     grid-area: loc2;
-    border-left: solid black;
-    border-right: solid black;
-    border-top: solid black;
-    border-bottom: solid black;
+    
     margin-left: 2px;
     margin-bottom: 2px;
   }
 
   .imglocal1 {
     width: 100%;
-    height: 65%;
-    border-bottom: dotted;
+    height: 60%;
+    border-radius: 5px;
+    border: 3px solid grey;
+    
   }
 
   .imglocal2 {
-    width: 100%;
-    height: 65%;
-    border: dotted;
+    @extend .imglocal1;
   }
 }
 
 .parrafo-imagenes {
   text-align: center;
+  justify-content: center;
 
   padding-left: 3px;
   padding-right: 3px;
   font-family: "Archivo negro";
   src: url("../fonts/ArchivoBlack-Regular.ttf");
+  color: white;
+  background-color: red;
+  height: 15vh;
+  border-radius: 3px;
+  margin-top: 5px;
 }
+
+.parrafo-imagenesh {
+  text-align: center;
+  justify-content: center;
+
+  padding-left: 3px;
+  padding-right: 3px;
+  font-family: "Archivo negro";
+  src: url("../fonts/ArchivoBlack-Regular.ttf");
+  color: white;
+  background: linear-gradient(to bottom, grey 10%, white 70%);
+  height: 15vh;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
 
 /*CSS DE LA PÁGINA OFERTAS A PARTIR DE AQUÍ*/
 
@@ -1080,7 +1160,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(122, 122, 113);
+  background: linear-gradient(to bottom, black 35%, white 70%);
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -1106,9 +1186,10 @@ body {
   grid-template-areas: 
   "tarjO tarj1 tarj2"
   "tarj3 tarj4 tarj5";
-  background-color: aqua;
+  background-color: black;
   padding: 4px 4px 4px 4px;
   gap: 5px;
+  
 }
 
 .tarjO {
@@ -1150,7 +1231,9 @@ body {
     flex-direction: column;
     align-items: center;
   
-}.tarj4 {
+}
+
+.tarj4 {
     grid-area: tarj4;
     background-color: black;
     padding: 10px 10px 10px 10px;
@@ -1174,10 +1257,47 @@ body {
   height: 30vh;
   border-radius: 15px;
 }
+.img1 {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 15px;
+}
+.img2 {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 15px;
+}
+.img3 {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 15px;
+}
+.img4 {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 15px;
+}
+.img5 {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 15px;
+}
+
+$imagenes: "imgO", "img1", "img2", "img4", "img5";
+@for $i from 1   through length($imagenes) {
+
+  .#{nth($imagenes, $i)} {
+
+    border: 3px solid grey;
+  }
+ 
+}
 
 .ptarjO {
   text-align: center;
   justify-content: center;
+  color: white;
+  
 }
 
 .boton {
@@ -1185,36 +1305,51 @@ body {
   padding-right: 15px;
   border-radius: 10px;
   background-color: red;
+  color: white;
+  
+  transition: 2s ease;
   
 }
 
 .boton:hover {
-    background-color: green;
+    background-color: orange;
+    width: 120px;
+    color: black
+    
 }
+
+
+
 
 .conteinerbootstrap {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(216, 224, 216);
-    padding: 10px 10px 10px 10px;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
     gap: 10px;
     
 }
 
 .mi-otra-clase {
 
-    background-color: red;
+    background-color: black;
     border-radius: 15px;
     
 }
 
+$colorpcolBoostrapt: white;
+      
 .pcolBootstrap {
     text-align: center;
+    color: $colorpcolBoostrapt;
+    
 }
 
 
 /*Página UBICACIÓN A PARTIR DE AQUÍ*/
+
+
 
 .sectionUbi {
 
@@ -1222,7 +1357,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(245, 142, 142);
+    background-image: url("../multimedia/cielo.jpg");
+    background-size: cover;
 
 }
 
@@ -1240,6 +1376,11 @@ body {
     padding-top: 10px;
 
 
+}
+
+.pUbi:hover {
+  color: white;
+  transition-delay: 2s;
 }
 
 
@@ -1262,7 +1403,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     padding: 5px 5px 5px 5px;
-    background-color: aqua;
+    background: linear-gradient(to bottom, white 10%, orange 70%);
 
 
 }
@@ -1271,7 +1412,7 @@ body {
 
     grid-area: mi-cardUbi;
     margin: 5px 5px 5px 5px;
-    background-color: black;
+    
     padding: 2px 2px 2px 2px;
     
     
@@ -1284,10 +1425,28 @@ body {
 
     grid-area: mi-cardUbi1;
     margin: 5px 5px 5px 5px;
-    background-color: black;
+    
     padding: 2px 2px 2px 2px;
     
     
+
+}
+
+$mi-cards: "mi-cardUbi", "mi-cardUbi1";
+
+@for $i from 1 through length($mi-cards)  {
+  
+  $card: nth($mi-cards, $i);
+  .#{$card} {
+    @if $i % 2 == 0 {
+
+      background-color: black;
+    } @else {
+      background-color: rgb(54, 53, 53);
+    }
+  }
+
+  
 
 }
 
@@ -1302,20 +1461,24 @@ body {
 
 
 .card-body-Ubi {
-    background-color: yellow;
+    border: none;
 
 
 }
 
+
+
 .mi-h5 {
     text-align: center;
     text-justify: auto;
+    color: white;
 
 
 }
 
 .card-p-Ubi {
     text-align: center;
+    color: white;
 
 
 }
@@ -1325,7 +1488,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: yellowgreen;
+    background: linear-gradient(to top, grey 10%, white 70%);
     width: 75vw;
     height: auto;
     border-radius: 3px;
@@ -1343,7 +1506,7 @@ body {
 .mi-otra-col-p {
 
     display: flex;
-    background-color: red;
+    background-color: black;
     margin: 2px 2px 2px 2px;
     border-radius: 2px;
     padding: 5px 5px 5px 5px;
@@ -1353,24 +1516,42 @@ body {
     text-align: center;
     text-justify: center;
     font-size: medium;
+    color: white;
+    border-radius: 5px;
 }
 
 /*a partir de aquí página contactos y pedidos*/
+
+$mapa: (
+
+primario: red,
+secundario: black,
+terciario: white,
+cuarto: burlywood,
+quinto: rgb(99, 97, 97)
+
+
+
+);
+
+
 
 .div-contactos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: darkgray;
+    background-color: map-get($mapa, secundario);
 }
 
 .p-contactos {
     margin: 5px 5px 5px 5px;
-    background-color: white;
+    background-color: black;
     border-radius: 3px;
+    
     padding: 3px 3px 3px 3px;
     font-size: large;
+    color: map-get($mapa, terciario);
 }
 
 .conteiner-form {
@@ -1382,7 +1563,7 @@ body {
     background-color: white(46, 45, 45);
     margin: 8px 8px 8px 8px;
     border-radius: 5px;
-    background-color: burlywood;
+    background-color: map-get($mapa,  cuarto);
     padding: 10px 10px 10px 10px;
     
     
@@ -1413,7 +1594,7 @@ body {
 
     grid-area: caja-conteiner2;
     padding: 5px 5px 5px 5px;
-    background-color: aqua;
+    background: linear-gradient(to right, aqua 10%, white 95%);
     border-radius: 5px;
     margin: 15px 15px 20px 15px;
 }
@@ -1422,7 +1603,7 @@ body {
 
     grid-area: caja-conteiner3;
     padding: 5px 5px 5px 5px;
-    background-color: aqua;
+    background: linear-gradient(to left, aqua 10%, white 95%);
     border-radius: 5px;
     margin: 15px 15px 15px 20px;
     display: flex;
@@ -1437,4 +1618,25 @@ body {
     align-items: center;
     text-align: center;
 
+}
+
+@keyframes crecer {
+  0% {
+    transform: scale(1);
+  
+  }
+  50% {
+    transform: scale(1.5);
+
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.img-container2 {
+
+  animation: crecer 1s infinite;
 }
