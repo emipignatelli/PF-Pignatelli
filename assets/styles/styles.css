@@ -261,6 +261,7 @@ body {
     padding-right: 5px;
     padding-top: 12px;
     background-color: black;
+    margin-bottom: 5px;
   }
   .aside-index {
     background: linear-gradient(to bottom, grey 10%, white 70%);
@@ -281,7 +282,7 @@ body {
     height: auto;
     max-width: 100%;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     background-color: black;
   }
   .sections img {
