@@ -74,6 +74,9 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .migaja-pan {
+    font-size: 10px;
+  }
 }
 @media (min-width: 0px) and (max-width: 480px) {
   .flex-container {
