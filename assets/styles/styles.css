@@ -69,6 +69,11 @@ body {
     border-radius: 2px;
     border: 1px solid black;
   }
+  .migaja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 0px) and (max-width: 480px) {
   .flex-container {
@@ -872,20 +877,15 @@ body {
     margin-bottom: 2px;
     display: inline-block;
   }
-  .imglocal1 {
-    width: 100%;
-    height: 65%;
-    border-bottom: dotted;
-  }
-  .imglocal2 {
-    width: 100%;
-    height: 65%;
-    border: dotted;
+  .imglocal1, .imglocal2 {
+    width: 48vw;
+    height: 30vh;
+    border-radius: 5px;
+    border: 3px solid grey;
   }
 }
 .parrafo-imagenes {
   text-align: center;
-  justify-content: center;
   padding-left: 3px;
   padding-right: 3px;
   font-family: "Archivo negro";
