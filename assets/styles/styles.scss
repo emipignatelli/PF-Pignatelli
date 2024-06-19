@@ -976,15 +976,21 @@ body {
 
   }
 
+  .enlace-hamburguesa {
+    color: white;
 
-  .btn-hamburguesa {
-    background-color: orange;
-    color: black;
-    margin-top: 3px;
-
-
-
+    &:hover {
+      
+      color: orange;
+      
+    }
+    
   }
+
+  
+
+
+
 
   .iconoss {
     display: flex;

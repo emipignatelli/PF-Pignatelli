@@ -746,10 +746,11 @@ body {
     align-items: center;
     gap: 3px;
   }
-  .btn-hamburguesa {
-    background-color: orange;
-    color: black;
-    margin-top: 3px;
+  .enlace-hamburguesa {
+    color: white;
+  }
+  .enlace-hamburguesa:hover {
+    color: orange;
   }
   .iconoss {
     display: flex;
