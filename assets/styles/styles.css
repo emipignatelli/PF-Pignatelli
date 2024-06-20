@@ -633,6 +633,9 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .color-migaja {
+    color: white;
+  }
 }
 @media (min-width: 0px) and (max-width: 480px) {
   .migaja {
@@ -640,6 +643,9 @@ body {
     justify-content: center;
     align-items: center;
     font-size: xx-small;
+  }
+  .color-migaja {
+    color: white;
   }
 }
 @media (max-width: 2000px) {
