@@ -1,0 +1,459 @@
+
+
+@media (max-width: 2000px) {
+  .conteinerVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, black 35%, white 70%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .divV {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 10px;
+
+      .video {
+        width: 60vw;
+        height: 50vh;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+  
+
+  .divCO {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "tarjO tarj1 tarj2"
+      "tarj3 tarj4 tarj5";
+    background-color: black;
+    padding: 4px 4px 4px 4px;
+    gap: 5px;
+
+    .tarjO {
+      grid-area: tarjO;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tarj1 {
+      grid-area: tarj1;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tarj2 {
+      grid-area: tarj2;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tarj3 {
+      grid-area: tarj3;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tarj4 {
+      grid-area: tarj4;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tarj5 {
+      grid-area: tarj5;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .imgO {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+
+  .img1 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+
+  .img2 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+
+  .img3 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+
+  .img4 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+
+  .img5 {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+  }
+
+  $imagenes: "imgO", "img1", "img2", "img4", "img5";
+
+  @for $i from 1 through length($imagenes) {
+    .#{nth($imagenes, $i)} {
+      border: 3px solid grey;
+    }
+  }
+
+  $parrafo-tarj-oferta-desktop: white;
+
+  .ptarjO,
+  .ptarj1,
+  .ptarj2,
+  .ptarj3,
+  .ptarj4,
+  .ptarj5 {
+    text-align: center;
+    justify-content: center;
+    color: $parrafo-tarj-oferta-desktop;
+  }
+
+  .boton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    transition: 2s ease;
+
+    &:hover {
+      background-color: orange;
+      width: 120px;
+      color: black;
+    }
+  }
+
+  .conteinerbootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+
+  .mi-otra-clase {
+    background-color: black;
+    border-radius: 15px;
+  }
+
+  $colorpcolBoostrapt: white;
+
+  .pcolBootstrap {
+    text-align: center;
+    color: $colorpcolBoostrapt;
+  }
+
+
+  
+  
+  @media (min-width: 0px) and (max-width: 480px) {
+    .conteinerVideo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, orange 10%, white 70%);
+      padding-top: 15px;
+      padding-bottom: 15px;
+  
+      .divV {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        border: 3px solid grey;
+      }
+  
+      .video {
+        width: 60vw;
+        height: 50vh;
+        border-radius: 15px;
+      }
+    }
+  }
+  
+  
+  .divCO {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "tarjO tarj1"
+      "tarj2 tarj3"
+      "tarj4 tarj5";
+    background-color: white;
+    padding: 4px 4px 4px 4px;
+    gap: 5px;
+  
+    .tarjO {
+      grid-area: tarjO;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .imgO {
+        width: 30vw;
+        height: 30vh;
+        border-radius: 15px;
+        border: 3px solid grey;
+      }
+  
+      .ptarjO {
+        text-align: center;
+        justify-content: center;
+        color: white;
+        margin-top: 4px;
+        background-color: rgb(54, 53, 53);
+        border-radius: 3px;
+        border: 1.5px solid black;
+        height: auto;
+      }
+    }
+  
+    .tarj1 {
+      grid-area: tarj1;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .img1 {
+        width: 30vw;
+        height: 30vh;
+        border-radius: 15px;
+        border: 3px solid grey;
+      }
+  
+      .ptarj1 {
+        text-align: center;
+        justify-content: center;
+        color: white;
+        margin-top: 4px;
+        background-color: black;
+        border-radius: 3px;
+        border: 1.5px solid grey;
+        height: auto;
+      }
+    }
+  
+    .tarj2 {
+      grid-area: tarj2;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .img2 {
+        width: 30vw;
+        height: 30vh;
+        border-radius: 15px;
+        border: 3px solid grey;
+      }
+  
+      .ptarj2 {
+        text-align: center;
+        justify-content: center;
+        color: white;
+        margin-top: 4px;
+        background-color: rgb(54, 53, 53);
+        border-radius: 3px;
+        border: 1.5px solid black;
+        height: auto;
+      }
+    }
+  
+    .tarj3 {
+      grid-area: tarj3;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .img3 {
+        width: 30vw;
+        height: 30vh;
+        border-radius: 15px;
+        border: 3px solid grey;
+      }
+  
+      .ptarj3 {
+        text-align: center;
+        justify-content: center;
+        color: white;
+        margin-top: 4px;
+        background-color: black;
+        border-radius: 3px;
+        border: 1.5px solid grey;
+        height: auto;
+      }
+    }
+  
+    .tarj4 {
+      grid-area: tarj4;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .img4 {
+        width: 30vw;
+        height: 30vh;
+        border-radius: 15px;
+        border: 3px solid grey;
+      }
+  
+      .ptarj4 {
+        text-align: center;
+        justify-content: center;
+        color: white;
+        margin-top: 4px;
+        background-color: rgb(54, 53, 53);
+        border-radius: 3px;
+        border: 1.5px solid black;
+        height: auto;
+      }
+    }
+  
+    .tarj5 {
+      grid-area: tarj5;
+      background-color: black;
+      padding: 10px 10px 10px 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .img5 {
+        width: 30vw;
+        height: 30vh;
+        border-radius: 15px;
+        border: 3px solid grey;
+      }
+  
+      .ptarj5 {
+        text-align: center;
+        justify-content: center;
+        color: white;
+        margin-top: 4px;
+        background-color: black;
+        border-radius: 3px;
+        border: 1.5px solid grey;
+        height: auto;
+      }
+    }
+  
+    $mi-parrafo-cards: "ptarjO", "ptarj1", "ptarj2", "ptarj3", "ptarj4", "ptarj5";
+  
+    @for $i from 1 through length($mi-parrafo-cards) {
+      $parrafo: nth($mi-parrafo-cards, $i);
+  
+      .#{$parrafo} {
+        @if $i % 2 == 0 {
+          background-color: black;
+          border-radius: 3px;
+          border: 1.5px solid grey;
+          height: auto;
+        } @else {
+          background-color: rgb(54, 53, 53);
+          border-radius: 3px;
+          border: 1.5px solid black;
+          height: auto;
+        }
+      }
+    }
+  }
+  
+  .boton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    transition: 2s ease;
+  }
+  
+  .conteinerbootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+  
+  .mi-otra-clase {
+    background-color: black;
+    border-radius: 15px;
+  }
+  
+  $colorpcolBoostrapt: white;
+  
+  .pcolBootstrap {
+    text-align: center;
+    color: $colorpcolBoostrapt;
+  }
+  
+  
+  

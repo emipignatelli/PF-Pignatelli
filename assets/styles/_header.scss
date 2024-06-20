@@ -1,0 +1,92 @@
+/*header*/
+
+
+@media (max-width: 2000px) {
+.flex-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+}
+  .logo img {
+    max-height: 100px;
+    border-radius: 3px;
+    margin: 5px 0;
+  }
+
+  .iconos 
+    img {
+      width: 30px;
+      margin-left: 10px;
+    }
+
+    .texto-iconos {
+      font-size: large;
+      font-family: "Times New Roman", Times, serif;
+      color: white;
+    }
+  
+
+  .navegacion {
+    background-color: black;
+    padding-right: 20px;
+    padding-top: 4px;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: block;
+        gap: 5px;
+
+        a {
+          font-family: cursive;
+          font-size: xx-small;
+          color: black;
+          text-decoration: none;
+          height: 3vh;
+
+          &:hover {
+            background-color: cornflowerblue;
+            transition-delay: 1s;
+          }
+        }
+      }
+    }
+
+    .miClaseButon {
+      margin-bottom: 3px;
+      background-color: orange;
+      border-radius: 2px;
+      border: 1px solid black;
+    }
+  }
+
+
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .flex-container {
+    justify-content: center;
+
+    .logo {
+      margin: 4px 0;
+    }
+
+    .iconos {
+      display: none;
+    }
+
+    .navegacion {
+      display: none;
+    }
+  }
+}
+
+}

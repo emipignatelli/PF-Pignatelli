@@ -1,0 +1,274 @@
+
+
+@media (max-width: 2000px) {
+  .sectionUbi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../multimedia/cielo.jpg");
+    background-size: cover;
+
+    .articleUbi {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .pUbi {
+        text-align: center;
+        padding-top: 10px;
+
+        &:hover {
+          color: white;
+          transition-delay: 2s;
+        }
+      }
+
+      .mapaUbi {
+        border-radius: 10px;
+        height: 40vh;
+        width: 80vh;
+      }
+    }
+  }
+}
+
+  
+  
+.mi-conteinerUbi {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "mi-cardUbi mi-cardUbi1";
+  gap: 1px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 5px 5px 5px;
+  background: linear-gradient(to bottom, white 10%, orange 70%);
+
+  $mi-cards: "mi-cardUbi", "mi-cardUbi1";
+
+  @for $i from 1 through length($mi-cards) {
+    $card: nth($mi-cards, $i);
+
+    .#{$card} {
+      grid-area: $card;
+      margin: 5px;
+      padding: 2px;
+
+      @if $i % 2 == 0 {
+        background-color: black;
+      } @else {
+        background-color: rgb(54, 53, 53);
+      }
+    }
+  }
+}
+
+.imgUbi {
+  height: 50vh;
+  width: auto;
+  padding: 2px 2px 2px 2px;
+  border-radius: 6px;
+  background-color: black;
+}
+
+.card-body-Ubi {
+  border: none;
+}
+
+.mi-h5 {
+  text-align: center;
+  text-justify: auto;
+  color: white;
+}
+
+.card-p-Ubi {
+  text-align: center;
+  color: white;
+}
+
+.asideUbi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, grey 10%, white 70%);
+  width: 75vw;
+  height: auto;
+  border-radius: 3px;
+  margin: 3px 3px 3px 3px;
+
+  .mi-Row-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 2px 2px 2px;
+  }
+
+  .mi-otra-col-p {
+    display: flex;
+    background-color: black;
+    margin: 2px 2px 2px 2px;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .p-aside-Ubi {
+    text-align: center;
+    text-justify: center;
+    font-size: medium;
+    color: white;
+    border-radius: 5px;
+  }
+}
+
+  
+  
+  
+@media (min-width: 0px) and (max-width: 480px) {
+  .sectionUbi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../multimedia/cielo.jpg");
+    background-size: cover;
+
+    .articleUbi {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .pUbi {
+        text-align: center;
+        padding-top: 10px;
+        color: black;
+      }
+
+      .mapaUbi {
+        border-radius: 10px;
+        height: 40vh;
+        width: 40vh;
+      }
+    }
+  }
+}
+
+  
+  
+.mi-conteinerUbi {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "mi-cardUbi"
+    "mi-cardUbi1";
+  gap: 1px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 5px 5px 5px;
+  background: linear-gradient(to bottom, white 10%, orange 70%);
+
+  .mi-cardUbi {
+    grid-area: mi-cardUbi;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .mi-cardUbi1 {
+    grid-area: mi-cardUbi1;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+  }
+}
+
+  
+    $mi-cards: "mi-cardUbi", "mi-cardUbi1";
+  
+    @for $i from 1 through length($mi-cards) {
+  
+      $card: nth($mi-cards, $i);
+  
+      .#{$card} {
+        @if $i % 2==0 {
+  
+          background-color: black;
+        }
+  
+        @else {
+          background-color: rgb(54, 53, 53);
+        }
+      }
+  
+  
+  
+    }
+  
+    .imgUbi {
+      height: 50vh;
+      width: auto;
+      padding: 2px 2px 2px 2px;
+      border-radius: 6px;
+      background-color: black;
+    }
+    
+    .card-body-Ubi {
+      border: none;
+    }
+    
+    .mi-h5 {
+      text-align: center;
+      text-justify: auto;
+      color: white;
+    }
+    
+    .card-p-Ubi {
+      text-align: center;
+      color: white;
+    }
+    
+    .asideUbi {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to top, grey 10%, white 70%);
+      width: 75vw;
+      height: auto;
+      border-radius: 3px;
+      margin: 3px 3px 3px 3px;
+    
+      .mi-Row-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2px 2px 2px 2px;
+      }
+    
+      .mi-otra-col-p {
+        display: flex;
+        background-color: black;
+        margin: 2px 2px 2px 2px;
+        border-radius: 2px;
+        padding: 5px 5px 5px 5px;
+      }
+    
+      .p-aside-Ubi {
+        text-align: center;
+        text-justify: center;
+        font-size: medium;
+        color: white;
+        border-radius: 5px;
+      }
+    }
+    
+  
+  
+  
+  

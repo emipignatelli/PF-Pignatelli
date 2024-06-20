@@ -1,0 +1,658 @@
+/*main*/
+
+@media (max-width: 2000px) {
+  main {
+    background-color: black;
+    height: 60%;
+    margin-top: 14vh;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  main {
+    background-color: black;
+    height: 60%;
+    margin-top: 14vh;
+  }
+}
+
+/* Mixin titulo principal desktop */
+@mixin estilo-tituloPrincipal-desktop {
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 15vh;
+  padding-top: 12vh;
+  font-family: "PermanentMarker-Regular";
+  src: url("../fonts/PermanentMarker-Regular.ttf");
+  font-weight: bold;
+  background: linear-gradient(to bottom, orange 10%, white);
+}
+
+@media (max-width: 2000px) {
+  .tituloPrincipal {
+    @include estilo-tituloPrincipal-desktop;
+  }
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: medium;
+  font-family: " sora ";
+  src: url("../fonts/Sora-VariableFont_wght.ttf");
+  font-weight: bold;
+}
+
+.texto {
+  text-align: center;
+  color: white;
+}
+
+.lista-art {
+  background-color: orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  border-radius: 2px;
+}
+
+.list-art2 {
+  background-color: orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  border-radius: 2px;
+}
+
+.lista-art li:hover {
+  background-color: white;
+}
+
+/* Mixin titulo principal mobile */
+@mixin estilo-tituloPrincipal-mobile {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "PermanentMarker-Regular";
+  src: url("../fonts/PermanentMarker-Regular.ttf");
+  font-weight: bold;
+  background: linear-gradient(to bottom, orange, white);
+  border-radius: 3px;
+  margin-top: 15vh;
+  padding-top: 12vh;
+  
+  
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .tituloPrincipal {
+    @include estilo-tituloPrincipal-mobile;
+  }
+}
+
+/* Mixin subtitulo mobile */
+@mixin estilo-subtitulo-mobile {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: large;
+  font-family: " sora ";
+  src: url("../fonts/Sora-VariableFont_wght.ttf");
+  font-weight: bold;
+  background: linear-gradient(to bottom, white, orange);
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.subtitulo {
+  @include estilo-subtitulo-mobile;
+}
+
+  
+  
+@media (max-width: 2000px) {
+  .flex-section {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-areas: 
+      "sections sections2 aside-index";
+    column-gap: 3px;
+    padding-left: 5px;
+    padding-right: 15px;
+
+    .aside-index {
+      background-color: black;
+      grid-area: aside-index;
+      border: none;
+      text-align: justify;
+      align-content: center;
+      padding-left: 4px;
+      padding-right: 4px;
+      height: auto;
+
+      p {
+        font-family: "Archivo negro";
+        src: url("../fonts/ArchivoBlack-Regular.ttf");
+        color: white;
+      }
+    }
+
+    .sections {
+      background-color: yellow;
+      grid-area: sections;
+      max-width: 100%;
+      background-color: black;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+    }
+
+    .sections2 {
+      background-color: black;
+      grid-area: sections2;
+      max-width: 100%;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 3px solid gray;
+      }
+    }
+
+    .textotarj1, .textotarj2 {
+      text-align: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 2px;
+      font-family: "Archivo negro";
+      src: url("../fonts/ArchivoBlack-Regular.ttf");
+      color: white;
+      background-color: red;
+      border-radius: 5px;
+      border: 2px solid black;
+      margin: 5px 10px;
+      font-size: 15px;
+    }
+  }
+}
+
+  
+@media (min-width: 0px) and (max-width: 480px) {
+  .flex-section {
+    display: grid;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "aside-index"
+      "sections"
+      "sections2";
+    row-gap: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 12px;
+    background-color: black;
+    margin-bottom: 5px;
+
+    @mixin estilo-aside-mobile {
+      background: linear-gradient(to bottom, grey 10%, white 70%);
+    }
+
+    .aside-index {
+      @include estilo-aside-mobile;
+      grid-area: aside-index;
+      border-radius: 5px;
+      border: 3px solid black;
+      text-align: center;
+      align-content: center;
+      padding-left: 4px;
+      padding-right: 4px;
+      font-family: "Archivo negro";
+      src: url("../fonts/ArchivoBlack-Regular.ttf");
+      color: black;
+      font-size: 15px bold;
+
+      p {
+        font-family: cursive;
+        color: black;
+      }
+    }
+
+    .sections {
+      grid-area: sections;
+      height: auto;
+      max-width: 100%;
+      border: none;
+      margin-top: 10px;
+      background-color: black;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 5px solid grey;
+      }
+    }
+
+    .sections2 {
+      grid-area: sections2;
+      height: auto;
+      max-width: 100%;
+      border: none;
+      margin-bottom: 30px;
+      background-color: black;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 5px solid grey;
+        margin-top: 10px;
+      }
+    }
+
+    .textotarj1 {
+      text-align: center;
+      box-sizing: border-box;
+      font-family: "Archivo negro";
+      src: url("../fonts/ArchivoBlack-Regular.ttf");
+      font-size: 15px;
+      color: white;
+      background-color: red;
+      border-radius: 5px;
+      border: 2px solid black;
+      margin: 5px 5px 10px 10px;
+    }
+
+    .textotarj2 {
+      text-align: center;
+      box-sizing: border-box;
+      font-family: "Archivo negro";
+      src: url("../fonts/ArchivoBlack-Regular.ttf");
+      font-size: 15px;
+      color: white;
+      background-color: red;
+      border-radius: 5px;
+      border: 2px solid black;
+      margin: 5px 5px 10px 10px;
+    }
+  }
+}
+
+  
+@media (max-width: 2000px) {
+  .flex-sections2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+      "sections3 sections4 sections5";
+    column-gap: 3px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    .sections3 {
+      grid-area: sections3;
+      max-width: 100%;
+      background-color: black;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: 55%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+    }
+
+    .sections4 {
+      grid-area: sections4;
+      max-width: 100%;
+      background-color: black;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: 55%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+    }
+
+    .sections5 {
+      grid-area: sections5;
+      max-width: 100%;
+      background-color: black;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: 55%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+    }
+
+    .textotarj3,
+    .textotarj4,
+    .textotarj5 {
+      text-align: center;
+      justify-content: center;
+      padding: 2px;
+      box-sizing: border-box;
+      font-family: "Archivo negro";
+      src: url("../fonts/ArchivoBlack-Regular.ttf");
+      font-size: 15px;
+      color: white;
+      background-color: red;
+      border-radius: 5px;
+      border: 2px solid black;
+      margin: 5px 10px;
+    }
+  }
+}
+
+  
+@media (min-width: 0px) and (max-width: 480px) {
+  .flex-sections2 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "sections3"
+      "sections4"
+      "sections5";
+    row-gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+
+    .sections3 {
+      grid-area: sections3;
+      max-width: 100%;
+      border: none;
+      margin-top: 25px;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 5px solid grey;
+      }
+    }
+
+    .sections4 {
+      grid-area: sections4;
+      max-width: 100%;
+      border-top: 5px;
+      border: none;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 5px solid grey;
+      }
+    }
+
+    .sections5 {
+      grid-area: sections5;
+      max-width: 100%;
+      border: none;
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 5px solid grey;
+        margin-top: 5px;
+      }
+    }
+
+    .textotarj3,
+    .textotarj4,
+    .textotarj5 {
+      text-align: center;
+      box-sizing: border-box;
+      font-family: "Archivo negro";
+      src: url("../fonts/ArchivoBlack-Regular.ttf");
+      font-size: 15px;
+      color: white;
+      background-color: red;
+      border-radius: 5px;
+      border: 2px solid black;
+      margin: 5px 10px;
+    }
+  }
+}
+
+  
+@media (max-width: 2000px) {
+  .marcas {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+      "marca1 marca2 marca3 marca4";
+    column-gap: 2px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 12px;
+
+    .marca1 {
+      grid-area: marca1;
+      border: solid black;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+
+      .textomarca1 {
+        text-align: center;
+        padding: 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro";
+        src: url("../fonts/ArchivoBlack-Regular.ttf");
+        color: white;
+      }
+    }
+
+    .marca2 {
+      grid-area: marca2;
+      border: solid black;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+
+      .textomarca2 {
+        text-align: center;
+        padding: 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro";
+        src: url("../fonts/ArchivoBlack-Regular.ttf");
+        color: white;
+      }
+    }
+
+    .marca3 {
+      grid-area: marca3;
+      border: solid black;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+
+      .textomarca3 {
+        text-align: center;
+        padding: 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro";
+        src: url("../fonts/ArchivoBlack-Regular.ttf");
+        color: white;
+      }
+    }
+
+    .marca4 {
+      grid-area: marca4;
+      border: solid black;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+
+      .textomarca4 {
+        text-align: center;
+        padding: 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro";
+        src: url("../fonts/ArchivoBlack-Regular.ttf");
+        color: white;
+      }
+    }
+  }
+}
+
+  
+@media (min-width: 0px) and (max-width: 480px) {
+  .marcas {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50% auto;
+    grid-template-areas: 
+      "marca1 marca2"
+      "marca3 marca4";
+    column-gap: 2px;
+    row-gap: 2px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    .marca1 {
+      grid-area: marca1;
+      border: solid black;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+
+      .textomarca1 {
+        text-align: center;
+        padding: 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro";
+        src: url("../fonts/ArchivoBlack-Regular.ttf");
+        color: white;
+      }
+    }
+
+    .marca2 {
+      grid-area: marca2;
+      border: solid black;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+
+      .textomarca2 {
+        text-align: center;
+        padding: 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro";
+        src: url("../fonts/ArchivoBlack-Regular.ttf");
+        color: white;
+      }
+    }
+
+    .marca3 {
+      grid-area: marca3;
+      border: solid black;
+      margin-bottom: 3px;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+
+      .textomarca3 {
+        text-align: center;
+        padding: 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro";
+        src: url("../fonts/ArchivoBlack-Regular.ttf");
+        color: white;
+      }
+    }
+
+    .marca4 {
+      grid-area: marca4;
+      border: solid black;
+      margin-bottom: 3px;
+
+      img {
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        border: 3px solid grey;
+      }
+
+      .textomarca4 {
+        text-align: center;
+        padding: 2px;
+        box-sizing: border-box;
+        font-family: "Archivo negro";
+        src: url("../fonts/ArchivoBlack-Regular.ttf");
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 2000px) {
+  .migaja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .migaja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-small;
+  }
+}
