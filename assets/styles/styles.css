@@ -1797,5 +1797,34 @@ body {
     color: black;
   }
 }
+/*Variables*/
+@media (max-width: 2000px) {
+  .body {
+    background: black;
+  }
+  .titulo-error {
+    color: orange;
+    text-align: center;
+  }
+  .titulo-error2 {
+    color: white;
+    text-align: center;
+  }
+}
+@media (min-width: 0px) and (max-width: 2000px) {
+  .body {
+    background: black;
+  }
+  .titulo-error {
+    color: orange;
+    text-align: center;
+    font-size: small;
+  }
+  .titulo-error2 {
+    color: white;
+    text-align: center;
+    font-size: small;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
