@@ -103,9 +103,10 @@ body {
   .tituloPrincipal {
     text-align: center;
     border-radius: 5px;
-    margin-top: 15vh;
+    margin-top: 17vh;
     padding-top: 12vh;
     font-family: "PermanentMarker-Regular";
+    font-size: 1.5rem;
     src: url("../fonts/PermanentMarker-Regular.ttf");
     font-weight: bold;
     background: linear-gradient(to bottom, orange 10%, white);
@@ -117,6 +118,7 @@ body {
   font-family: " sora ";
   src: url("../fonts/Sora-VariableFont_wght.ttf");
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .texto {
@@ -634,7 +636,7 @@ body {
     align-items: center;
   }
   .color-migaja {
-    color: white;
+    color: grey;
   }
 }
 @media (min-width: 0px) and (max-width: 480px) {
@@ -645,7 +647,7 @@ body {
     font-size: xx-small;
   }
   .color-migaja {
-    color: white;
+    color: grey;
   }
 }
 @media (max-width: 2000px) {
@@ -1359,21 +1361,21 @@ body {
     background-image: url("../multimedia/cielo.jpg");
     background-size: cover;
   }
-  .sectionUbi .articleUbi {
+  .articleUbi {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .sectionUbi .articleUbi .pUbi {
+  .pUbi {
     text-align: center;
     padding-top: 10px;
   }
-  .sectionUbi .articleUbi .pUbi:hover {
+  .pUbi:hover {
     color: white;
     transition-delay: 2s;
   }
-  .sectionUbi .articleUbi .mapaUbi {
+  .pUbi .mapaUbi {
     border-radius: 10px;
     height: 40vh;
     width: 80vh;
@@ -1390,16 +1392,24 @@ body {
   padding: 5px 5px 5px 5px;
   background: linear-gradient(to bottom, white 10%, orange 70%);
 }
-.mi-conteinerUbi .mi-cardUbi {
-  grid-area: "mi-cardUbi";
-  margin: 5px;
-  padding: 2px;
+
+.mi-cardUbi {
+  grid-area: mi-cardUbi;
+  margin: 5px 5px 5px 5px;
+  padding: 2px 2px 2px 2px;
+}
+
+.mi-cardUbi1 {
+  grid-area: mi-cardUbi1;
+  margin: 5px 5px 5px 5px;
+  padding: 2px 2px 2px 2px;
+}
+
+.mi-cardUbi {
   background-color: rgb(54, 53, 53);
 }
-.mi-conteinerUbi .mi-cardUbi1 {
-  grid-area: "mi-cardUbi1";
-  margin: 5px;
-  padding: 2px;
+
+.mi-cardUbi1 {
   background-color: black;
 }
 
@@ -1437,21 +1447,24 @@ body {
   border-radius: 3px;
   margin: 3px 3px 3px 3px;
 }
-.asideUbi .mi-Row-aside {
+
+.mi-Row-aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 2px 2px 2px 2px;
 }
-.asideUbi .mi-otra-col-p {
+
+.mi-otra-col-p {
   display: flex;
   background-color: black;
   margin: 2px 2px 2px 2px;
   border-radius: 2px;
   padding: 5px 5px 5px 5px;
 }
-.asideUbi .p-aside-Ubi {
+
+.p-aside-Ubi {
   text-align: center;
   text-justify: center;
   font-size: medium;
@@ -1492,7 +1505,7 @@ body {
   grid-template-areas: "mi-cardUbi" "mi-cardUbi1";
   gap: 1px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 5px 5px 5px 5px;
   background: linear-gradient(to bottom, white 10%, orange 70%);
 }
@@ -1732,6 +1745,57 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 2000px) {
+  .main-accesibilidad {
+    background: linear-gradient(to bottom, orange 25%, white 70%);
+  }
+  .parrafo-acces {
+    text-align: center;
+  }
+  .contenedor-accesibilidad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+  }
+  .lista-accesibilidad {
+    list-style-type: none;
+  }
+  .enlace-acces {
+    color: black;
+  }
+  .enlace-acces:hover {
+    color: grey;
+  }
+  .p-acces {
+    text-align: center;
+  }
+}
+@media (min-wdith: 0px) and (max-width: 480px) {
+  .main-accesibilidad {
+    background: linear-gradient(to bottom, orange 25%, white 70%);
+  }
+  .parrafo-acces {
+    text-align: center;
+  }
+  .contenedor-accesibilidad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .lista-accesibilidad {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  .enlace-acces {
+    color: black;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

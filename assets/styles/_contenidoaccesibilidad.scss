@@ -1,0 +1,74 @@
+
+@media (max-width: 2000px) { 
+
+
+.main-accesibilidad {
+    background: linear-gradient(to bottom, orange 25%, white 70%);
+}
+
+.parrafo-acces {
+    text-align: center;
+    
+    
+}
+
+
+.contenedor-accesibilidad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:start;
+    align-items: center;
+    
+}
+
+ .lista-accesibilidad {
+    list-style-type: none;
+}
+
+  .enlace-acces {
+    color: black;
+    
+        &:hover {
+            color: grey;
+        }
+}
+
+.p-acces {
+    text-align: center;
+    
+}
+
+}
+
+@media (min-wdith: 0px) and (max-width: 480px) {
+    .main-accesibilidad {
+        background: linear-gradient(to bottom, orange 25%, white 70%);
+
+
+    }
+
+    .parrafo-acces {
+        text-align: center;
+    }
+    .contenedor-accesibilidad {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+     .lista-accesibilidad {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        
+    }
+      .enlace-acces {
+        color: black;
+        
+    }
+
+}

@@ -20,9 +20,10 @@
 @mixin estilo-tituloPrincipal-desktop {
   text-align: center;
   border-radius: 5px;
-  margin-top: 15vh;
+  margin-top: 17vh;
   padding-top: 12vh;
   font-family: "PermanentMarker-Regular";
+  font-size: 1.5rem;
   src: url("../fonts/PermanentMarker-Regular.ttf");
   font-weight: bold;
   background: linear-gradient(to bottom, orange 10%, white);
@@ -40,6 +41,7 @@
   font-family: " sora ";
   src: url("../fonts/Sora-VariableFont_wght.ttf");
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .texto {
@@ -648,7 +650,7 @@
     align-items: center;
   }
   .color-migaja {
-    color: white;
+    color: grey;
   }
 }
 @media (min-width: 0px) and (max-width: 480px) {
@@ -659,6 +661,6 @@
     font-size: xx-small;
   }
   .color-migaja {
-    color: white;
+    color: grey;
   }
 }

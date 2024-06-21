@@ -8,22 +8,24 @@
     align-items: center;
     background-image: url("../multimedia/cielo.jpg");
     background-size: cover;
-
+  }
     .articleUbi {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
+    }
       .pUbi {
         text-align: center;
         padding-top: 10px;
+      
 
         &:hover {
           color: white;
           transition-delay: 2s;
         }
-      }
+      
 
       .mapaUbi {
         border-radius: 10px;
@@ -31,8 +33,8 @@
         width: 80vh;
       }
     }
-  }
 }
+
 
   
   
@@ -47,6 +49,23 @@
   justify-content: space-evenly;
   padding: 5px 5px 5px 5px;
   background: linear-gradient(to bottom, white 10%, orange 70%);
+  
+}
+
+  .mi-cardUbi {
+    grid-area: mi-cardUbi;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+    
+  }
+
+  .mi-cardUbi1 {
+    grid-area: mi-cardUbi1;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+    
+  }
+
 
   $mi-cards: "mi-cardUbi", "mi-cardUbi1";
 
@@ -54,9 +73,7 @@
     $card: nth($mi-cards, $i);
 
     .#{$card} {
-      grid-area: $card;
-      margin: 5px;
-      padding: 2px;
+      
 
       @if $i % 2 == 0 {
         background-color: black;
@@ -65,7 +82,7 @@
       }
     }
   }
-}
+
 
 .imgUbi {
   height: 50vh;
@@ -100,6 +117,7 @@
   height: auto;
   border-radius: 3px;
   margin: 3px 3px 3px 3px;
+}
 
   .mi-Row-aside {
     display: flex;
@@ -124,7 +142,7 @@
     color: white;
     border-radius: 5px;
   }
-}
+
 
   
   
@@ -170,7 +188,7 @@
     "mi-cardUbi1";
   gap: 1px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 5px 5px 5px 5px;
   background: linear-gradient(to bottom, white 10%, orange 70%);
 
