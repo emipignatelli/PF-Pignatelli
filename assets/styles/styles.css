@@ -256,6 +256,7 @@ body {
     padding-top: 12px;
     background-color: black;
     margin-bottom: 5px;
+    /*mixin*/
   }
   .flex-section .aside-index {
     background: linear-gradient(to bottom, grey 10%, white 70%);
@@ -908,6 +909,7 @@ body {
   font-size: 15px;
 }
 
+/*variable*/
 .parrafo-imageneshmyv {
   color: black;
   background: linear-gradient(to bottom, grey 3%, white 70%);
@@ -1040,6 +1042,7 @@ body {
   border-radius: 15px;
 }
 
+/*bucle*/
 .imgO {
   border: 3px solid grey;
 }
@@ -1060,6 +1063,7 @@ body {
   border: 3px solid grey;
 }
 
+/*variable*/
 .ptarjO,
 .ptarj1,
 .ptarj2,
@@ -1099,6 +1103,7 @@ body {
   border-radius: 15px;
 }
 
+/*variable*/
 .pcolBootstrap {
   text-align: center;
   color: white;
@@ -1136,6 +1141,7 @@ body {
   background-color: white;
   padding: 4px 4px 4px 4px;
   gap: 5px;
+  /*bucle*/
 }
 .divCO .tarjO {
   grid-area: tarjO;
@@ -1405,6 +1411,7 @@ body {
   padding: 2px 2px 2px 2px;
 }
 
+/*bucle*/
 .mi-cardUbi {
   background-color: rgb(54, 53, 53);
 }
@@ -1520,6 +1527,7 @@ body {
   padding: 2px 2px 2px 2px;
 }
 
+/*bucle*/
 .mi-cardUbi {
   background-color: rgb(54, 53, 53);
 }
@@ -1751,9 +1759,6 @@ body {
   .main-accesibilidad {
     background: linear-gradient(to bottom, orange 25%, white 70%);
   }
-  .parrafo-acces {
-    text-align: center;
-  }
   .contenedor-accesibilidad {
     display: flex;
     flex-direction: row;
@@ -1770,16 +1775,10 @@ body {
   .enlace-acces:hover {
     color: grey;
   }
-  .p-acces {
-    text-align: center;
-  }
 }
 @media (min-wdith: 0px) and (max-width: 480px) {
   .main-accesibilidad {
     background: linear-gradient(to bottom, orange 25%, white 70%);
-  }
-  .parrafo-acces {
-    text-align: center;
   }
   .contenedor-accesibilidad {
     display: flex;

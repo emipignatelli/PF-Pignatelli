@@ -136,6 +136,9 @@
     border-radius: 15px;
   }
 
+/*bucle*/
+
+
   $imagenes: "imgO", "img1", "img2", "img4", "img5";
 
   @for $i from 1 through length($imagenes) {
@@ -144,6 +147,8 @@
     }
   }
 
+/*variable*/ 
+  
   $parrafo-tarj-oferta-desktop: white;
 
   .ptarjO,
@@ -185,6 +190,7 @@
     background-color: black;
     border-radius: 15px;
   }
+/*variable*/
 
   $colorpcolBoostrapt: white;
 
@@ -404,6 +410,8 @@
       }
     }
   
+/*bucle*/
+
     $mi-parrafo-cards: "ptarjO", "ptarj1", "ptarj2", "ptarj3", "ptarj4", "ptarj5";
   
     @for $i from 1 through length($mi-parrafo-cards) {

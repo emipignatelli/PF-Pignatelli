@@ -206,6 +206,10 @@
     background-color: black;
     margin-bottom: 5px;
 
+
+/*mixin*/
+
+
     @mixin estilo-aside-mobile {
       background: linear-gradient(to bottom, grey 10%, white 70%);
     }

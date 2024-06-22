@@ -66,6 +66,7 @@
     
   }
 
+/*bucle*/
 
   $mi-cards: "mi-cardUbi", "mi-cardUbi1";
 
@@ -205,7 +206,8 @@
   }
 }
 
-  
+/*bucle*/
+
     $mi-cards: "mi-cardUbi", "mi-cardUbi1";
   
     @for $i from 1 through length($mi-cards) {
