@@ -1139,232 +1139,227 @@ body {
     height: 50vh;
     border-radius: 15px;
   }
+  .divCO {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "tarjO" "tarj1" "tarj2" "tarj3" "tarj4" "tarj5";
+    background-color: white;
+    padding: 4px 4px 4px 4px;
+    gap: 5px;
+    /*bucle*/
+  }
+  .divCO .tarjO {
+    grid-area: tarjO;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .divCO .tarjO .imgO {
+    width: 50vw;
+    height: 30vh;
+    border-radius: 15px;
+    border: 3px solid grey;
+  }
+  .divCO .tarjO .ptarjO {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+    background-color: rgb(54, 53, 53);
+    border-radius: 3px;
+    border: 1.5px solid black;
+    height: auto;
+  }
+  .divCO .tarj1 {
+    grid-area: tarj1;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .divCO .tarj1 .img1 {
+    width: 50vw;
+    height: 30vh;
+    border-radius: 15px;
+    border: 3px solid grey;
+  }
+  .divCO .tarj1 .ptarj1 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+    background-color: black;
+    border-radius: 3px;
+    border: 1.5px solid grey;
+    height: auto;
+  }
+  .divCO .tarj2 {
+    grid-area: tarj2;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .divCO .tarj2 .img2 {
+    width: 50vw;
+    height: 30vh;
+    border-radius: 15px;
+    border: 3px solid grey;
+  }
+  .divCO .tarj2 .ptarj2 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+    background-color: rgb(54, 53, 53);
+    border-radius: 3px;
+    border: 1.5px solid black;
+    height: auto;
+  }
+  .divCO .tarj3 {
+    grid-area: tarj3;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .divCO .tarj3 .img3 {
+    width: 50vw;
+    height: 30vh;
+    border-radius: 15px;
+    border: 3px solid grey;
+  }
+  .divCO .tarj3 .ptarj3 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+    background-color: black;
+    border-radius: 3px;
+    border: 1.5px solid grey;
+    height: auto;
+  }
+  .divCO .tarj4 {
+    grid-area: tarj4;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .divCO .tarj4 .img4 {
+    width: 50vw;
+    height: 30vh;
+    border-radius: 15px;
+    border: 3px solid grey;
+  }
+  .divCO .tarj4 .ptarj4 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+    background-color: rgb(54, 53, 53);
+    border-radius: 3px;
+    border: 1.5px solid black;
+    height: auto;
+  }
+  .divCO .tarj5 {
+    grid-area: tarj5;
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .divCO .tarj5 .img5 {
+    width: 50vw;
+    height: 30vh;
+    border-radius: 15px;
+    border: 3px solid grey;
+  }
+  .divCO .tarj5 .ptarj5 {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 4px;
+    background-color: black;
+    border-radius: 3px;
+    border: 1.5px solid grey;
+    height: auto;
+  }
+  .divCO .ptarjO {
+    background-color: rgb(54, 53, 53);
+    border-radius: 3px;
+    border: 1.5px solid black;
+    height: auto;
+  }
+  .divCO .ptarj1 {
+    background-color: black;
+    border-radius: 3px;
+    border: 1.5px solid grey;
+    height: auto;
+  }
+  .divCO .ptarj2 {
+    background-color: rgb(54, 53, 53);
+    border-radius: 3px;
+    border: 1.5px solid black;
+    height: auto;
+  }
+  .divCO .ptarj3 {
+    background-color: black;
+    border-radius: 3px;
+    border: 1.5px solid grey;
+    height: auto;
+  }
+  .divCO .ptarj4 {
+    background-color: rgb(54, 53, 53);
+    border-radius: 3px;
+    border: 1.5px solid black;
+    height: auto;
+  }
+  .divCO .ptarj5 {
+    background-color: black;
+    border-radius: 3px;
+    border: 1.5px solid grey;
+    height: auto;
+  }
+  .boton {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    transition: 2s ease;
+  }
+  .conteinerbootstrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 15%, white 60%);
+    padding: 40px 10px 10px 10px;
+    gap: 10px;
+  }
+  .mi-otra-clase {
+    background-color: black;
+    border-radius: 15px;
+  }
+  .pcolBootstrap {
+    text-align: center;
+    color: white;
+  }
 }
-.divCO {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "tarjO tarj1" "tarj2 tarj3" "tarj4 tarj5";
-  background-color: white;
-  padding: 4px 4px 4px 4px;
-  gap: 5px;
-  /*bucle*/
-}
-.divCO .tarjO {
-  grid-area: tarjO;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.divCO .tarjO .imgO {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-  border: 3px solid grey;
-}
-.divCO .tarjO .ptarjO {
-  text-align: center;
-  justify-content: center;
-  color: white;
-  margin-top: 4px;
-  background-color: rgb(54, 53, 53);
-  border-radius: 3px;
-  border: 1.5px solid black;
-  height: auto;
-}
-.divCO .tarj1 {
-  grid-area: tarj1;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.divCO .tarj1 .img1 {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-  border: 3px solid grey;
-}
-.divCO .tarj1 .ptarj1 {
-  text-align: center;
-  justify-content: center;
-  color: white;
-  margin-top: 4px;
-  background-color: black;
-  border-radius: 3px;
-  border: 1.5px solid grey;
-  height: auto;
-}
-.divCO .tarj2 {
-  grid-area: tarj2;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.divCO .tarj2 .img2 {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-  border: 3px solid grey;
-}
-.divCO .tarj2 .ptarj2 {
-  text-align: center;
-  justify-content: center;
-  color: white;
-  margin-top: 4px;
-  background-color: rgb(54, 53, 53);
-  border-radius: 3px;
-  border: 1.5px solid black;
-  height: auto;
-}
-.divCO .tarj3 {
-  grid-area: tarj3;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.divCO .tarj3 .img3 {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-  border: 3px solid grey;
-}
-.divCO .tarj3 .ptarj3 {
-  text-align: center;
-  justify-content: center;
-  color: white;
-  margin-top: 4px;
-  background-color: black;
-  border-radius: 3px;
-  border: 1.5px solid grey;
-  height: auto;
-}
-.divCO .tarj4 {
-  grid-area: tarj4;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.divCO .tarj4 .img4 {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-  border: 3px solid grey;
-}
-.divCO .tarj4 .ptarj4 {
-  text-align: center;
-  justify-content: center;
-  color: white;
-  margin-top: 4px;
-  background-color: rgb(54, 53, 53);
-  border-radius: 3px;
-  border: 1.5px solid black;
-  height: auto;
-}
-.divCO .tarj5 {
-  grid-area: tarj5;
-  background-color: black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.divCO .tarj5 .img5 {
-  width: 30vw;
-  height: 30vh;
-  border-radius: 15px;
-  border: 3px solid grey;
-}
-.divCO .tarj5 .ptarj5 {
-  text-align: center;
-  justify-content: center;
-  color: white;
-  margin-top: 4px;
-  background-color: black;
-  border-radius: 3px;
-  border: 1.5px solid grey;
-  height: auto;
-}
-.divCO .ptarjO {
-  background-color: rgb(54, 53, 53);
-  border-radius: 3px;
-  border: 1.5px solid black;
-  height: auto;
-}
-.divCO .ptarj1 {
-  background-color: black;
-  border-radius: 3px;
-  border: 1.5px solid grey;
-  height: auto;
-}
-.divCO .ptarj2 {
-  background-color: rgb(54, 53, 53);
-  border-radius: 3px;
-  border: 1.5px solid black;
-  height: auto;
-}
-.divCO .ptarj3 {
-  background-color: black;
-  border-radius: 3px;
-  border: 1.5px solid grey;
-  height: auto;
-}
-.divCO .ptarj4 {
-  background-color: rgb(54, 53, 53);
-  border-radius: 3px;
-  border: 1.5px solid black;
-  height: auto;
-}
-.divCO .ptarj5 {
-  background-color: black;
-  border-radius: 3px;
-  border: 1.5px solid grey;
-  height: auto;
-}
-
-.boton {
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 10px;
-  background-color: red;
-  color: white;
-  transition: 2s ease;
-}
-
-.conteinerbootstrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom, black 15%, white 60%);
-  padding: 40px 10px 10px 10px;
-  gap: 10px;
-}
-
-.mi-otra-clase {
-  background-color: black;
-  border-radius: 15px;
-}
-
-.pcolBootstrap {
-  text-align: center;
-  color: white;
-}
-
 @media (max-width: 2000px) {
   .sectionUbi {
     display: flex;
