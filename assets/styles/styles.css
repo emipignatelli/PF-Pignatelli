@@ -1702,6 +1702,7 @@ body {
     background: linear-gradient(to right, aqua 10%, white 95%);
     border-radius: 5px;
     margin: 15px 15px 20px 15px;
+    width: 100%;
   }
   .p-conteiner2-cyp {
     display: flex;
@@ -1734,6 +1735,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
 }
 
 @media (max-width: 2000px) {
