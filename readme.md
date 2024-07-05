@@ -35,5 +35,5 @@ Se realizaron las siguientes modificaciones:
 4- Los párrafos de la sección contactos y pedidos fueron establecidos en su 100% del vw como fue recomendado.
 5- El menú hamburguesa fue establecido en el header de cada una de las páginas en vez de en el footer.
 6- Se revisaron las llaves mal abiertas y cerradas que era lo que hacía que la página tenga errores. 
-7- Se verificaron los enlaces y las rutas. (Profe lo chequeé un montón de veces, ya sea desde la pc, el celular y a mí se me vé perfecto. Quizás usted deba borrar los caché de su navegador. Le voy a adjuntar fotos en el chat de la plataforma porque es rarísimo que no las pueda ver)
+7- Se verificaron los enlaces y las rutas y se modifico la misma de ubicación mencionada en la correción.
 
