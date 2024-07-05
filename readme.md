@@ -24,3 +24,16 @@ A partir de la entrega final se realizaron las siguientes cuestiones:
 10- Se creó una página de accesibilidad para que ayude al cliente a entender como funciona la página, se creó una página de error 404 y un mapa de sitio. 
 11- Intenté hacer el google my bussines pero no me mandaron nunca el código de verificación.
 12- Traté de poner el enlace al hosting pero no se por qué no lo reconocía y no me abría la página. 
+
+
+Hoy 05/07 realicé las correcciones correspondientes a las devoluciones sobre el proyecto final entregado y comentado por el profesor Saúl.
+
+Se realizaron las siguientes modificaciones:
+1- Se achicó la distancia entre las imágenes de las secciones en la página de inicio.
+2- Se modificó la estética de la página ofertas para que las imágenes en la versión mobile se vean y aprecien correctamente.
+3- Las imágenes de la página de ubicación se determinaron de manera horizontal para ocupar más espacio.
+4- Los párrafos de la sección contactos y pedidos fueron establecidos en su 100% del vw como fue recomendado.
+5- El menú hamburguesa fue establecido en el header de cada una de las páginas en vez de en el footer.
+6- Se revisaron las llaves mal abiertas y cerradas que era lo que hacía que la página tenga errores. 
+7- Se verificaron los enlaces y las rutas. (Profe lo chequeé un montón de veces, ya sea desde la pc, el celular y a mí se me vé perfecto. Quizás usted deba borrar los caché de su navegador. Le voy a adjuntar fotos en el chat de la plataforma porque es rarísimo que no las pueda ver)
+
