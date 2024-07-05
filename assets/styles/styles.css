@@ -1654,7 +1654,7 @@ body {
     flex-direction: column;
   }
 }
-@media (max-width: 2000px) and (min-width: 0px) and (max-width: 480px) and (max-width: 2000px) {
+@media (min-width: 0px) and (max-width: 480px) and (max-width: 2000px) {
   .div-contactos {
     display: flex;
     flex-direction: column;
@@ -1702,7 +1702,7 @@ body {
     background: linear-gradient(to right, aqua 10%, white 95%);
     border-radius: 5px;
     margin: 15px 15px 20px 15px;
-    width: 100%;
+    width: 100vw;
   }
   .p-conteiner2-cyp {
     display: flex;
@@ -1725,19 +1725,20 @@ body {
     animation: crecer 1s infinite;
   }
 }
-.caja-conteiner3 {
-  grid-area: caja-conteiner3;
-  padding: 5px 5px 5px 5px;
-  background: linear-gradient(to left, aqua 10%, white 95%);
-  border-radius: 5px;
-  margin: 15px 15px 15px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
+@media (min-width: 0px) and (max-width: 480px) {
+  .caja-conteiner3 {
+    grid-area: caja-conteiner3;
+    padding: 5px 5px 5px 5px;
+    background: linear-gradient(to left, aqua 10%, white 95%);
+    border-radius: 5px;
+    margin: 15px 15px 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+  }
 }
-
 @media (max-width: 2000px) {
   .main-accesibilidad {
     background: linear-gradient(to bottom, orange 25%, white 70%);

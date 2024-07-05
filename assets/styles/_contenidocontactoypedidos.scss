@@ -106,7 +106,7 @@
     flex-direction: column;
   }
   
-  
+}
   
   @media (min-width: 0px) and (max-width: 480px) {
     @media (max-width: 2000px) {
@@ -183,7 +183,7 @@
           background: linear-gradient(to right, aqua 10%, white 95%);
           border-radius: 5px;
           margin: 15px 15px 20px 15px;
-          width: 100%;
+          width: 100vw;
         }
     
         .p-conteiner2-cyp {
@@ -219,8 +219,8 @@
     
     
         }
-        }
-        }
+        
+        
     .caja-conteiner3 {
     
       grid-area: caja-conteiner3;
@@ -235,4 +235,4 @@
       width: 100vw;
     }
     
-    
+  }
