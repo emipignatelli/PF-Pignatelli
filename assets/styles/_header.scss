@@ -2,6 +2,7 @@
 
 
 @media (max-width: 2000px) {
+
 .flex-container {
   position: fixed;
   top: 0;
@@ -69,11 +70,16 @@
     }
   }
 
+  .nav-responsive {
+    display: none;
+  }
 
+}
 
 @media (min-width: 0px) and (max-width: 480px) {
   .flex-container {
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 
     .logo {
       margin: 4px 0;
@@ -86,7 +92,22 @@
     .navegacion {
       display: none;
     }
+    
+    .nav-responsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+  
+        .enlace-hamburguesa {
+          color: white;
+  
+          &:hover {
+            color: orange;
+          }
+        }
+      }
+    }
   }
-}
 
-}
+

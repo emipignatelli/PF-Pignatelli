@@ -68,10 +68,14 @@ body {
     border-radius: 2px;
     border: 1px solid black;
   }
+  .nav-responsive {
+    display: none;
+  }
 }
-@media (max-width: 2000px) and (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .flex-container {
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
   .flex-container .logo {
     margin: 4px 0;
@@ -81,6 +85,18 @@ body {
   }
   .flex-container .navegacion {
     display: none;
+  }
+  .flex-container .nav-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  .flex-container .nav-responsive .enlace-hamburguesa {
+    color: white;
+  }
+  .flex-container .nav-responsive .enlace-hamburguesa:hover {
+    color: orange;
   }
 }
 /*main*/
@@ -710,29 +726,25 @@ body {
   .footer-resp .nav-responsive .enlace-hamburguesa:hover {
     color: orange;
   }
+  .iconoss {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .iconosss {
+    width: 50px;
+    height: 50px;
+  }
+  .iconitos {
+    height: 25px;
+    width: 25px;
+  }
+  .text-span-resp {
+    font-size: x-small;
+    text-align: center;
+    color: white;
+  }
 }
-.iconoss {
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-}
-
-.iconosss {
-  width: 50px;
-  height: 50px;
-}
-
-.iconitos {
-  height: 25px;
-  width: 25px;
-}
-
-.text-span-resp {
-  font-size: x-small;
-  text-align: center;
-  color: white;
-}
-
 @media (max-width: 2000px) {
   .section-nosotros {
     display: grid;
